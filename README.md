@@ -22,10 +22,6 @@
 - **Databases:** [insert databases you work with]
 - **Other:** [insert any other technologies you use]
 
-## GitHub Stats
-
-![DonBaguette's GitHub stats](https://github-readme-stats.vercel.app/api?username=DonBaguette&show_icons=true&theme=radical)
-
 ## Projects
 
 Here are a few projects I'm currently working on:
