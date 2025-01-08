@@ -1,4 +1,4 @@
-# Hi there, Welcome to ROCHosting 👋
+# Hey, Bienvenido a ROCHosting 👋
 
 <img src="https://github.com/user-attachments/assets/b9a02839-9ca3-4ffb-8f04-3fc99bcbc337" alt="Profile Image" width="200"/>
 
