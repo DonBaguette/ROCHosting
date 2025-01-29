@@ -42,13 +42,10 @@
 </p>
 
 ## 📌About
-
 <div>
     <p align="center">
     <em>
-        (Coloque aqui uma pequena descrição sobre seu Projeto)<br>
-        (Place a short description of your Project here)<br><br>
-        Construction of a Personal Blog using Angular, a project developed at Generation's Bootcamp with the aim of learning.
+        ROCHosting es un proyecto de SMX2, desarrollado por Guillem Ariza, cuyo objetivo es ofrecer un servidor de Valheim disponible 24/7 para que todo el mundo pueda acceder a él. El servidor está diseñado para ser de fácil acceso y confiable, con características adicionales como copias de seguridad automáticas y soporte para mods.
     </em>
     </p>
 </div>
@@ -57,13 +54,13 @@
 
  <p align="center">
     <em>
-        (Coloque aqui as Funcionalidades do seu Projeto)<br>
-        (Place the Features of your project here)<br>
     </em>
  </p>
-
-- Creation, Editing and Deletion of Posts, Themes and User.
-- Admin Roles
+ 
+- **Servidor 24/7:** El servidor de Valheim estará disponible las 24 horas, los 7 días de la semana, para que todos los jugadores puedan unirse en cualquier momento.
+- **Copias de seguridad automáticas:** El sistema realizará copias de seguridad periódicas para garantizar que el progreso no se pierda.
+- **Soporte para mods:** El servidor estará configurado para permitir mods, ofreciendo a los jugadores la posibilidad de personalizar su experiencia de juego
+- **Optimización del rendimiento:** El servidor estará optimizado para asegurar la mejor experiencia de juego sin caídas ni sobrecarga.
 
 ## 👓Revised Concepts
 
