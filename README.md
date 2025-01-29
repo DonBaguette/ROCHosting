@@ -8,23 +8,23 @@
         <img src="https://img.shields.io/static/v1?label=Autor&message=Guillem&color=00ba6d&style=for-the-badge&logo=LinkedIn" alt="Author: Guillem">
     </a>
     <a href="#">
-        <img src="https://img.shields.io/static/v1?label=Languaje&message=Typescript&color=blue&style=for-the-badge&logo=Typescript" alt="Languaje: Typescript">
+        <img src="https://img.shields.io/static/v1?label=VMs&message=Docker&color=blue&style=for-the-badge&logo=Docker" alt="Docker:Docker">
     </a>
     <a href="#">
-        <img src="https://img.shields.io/static/v1?label=Language&message=Javascript&color=yellow&style=for-the-badge&logo=JavaScript" alt="Language: Javascript">
+        <img src="https://img.shields.io/static/v1?label=OS&message=Ubuntu&color=orange&style=for-the-badge&logo=Ubuntu" alt="Languaje:Ubuntu  ">
     </a>
   <br>
     <a  href="#">
-      <img  src="https://img.shields.io/static/v1?label=Framework&message=Angular&color=e23237&style=for-the-badge&logo=Angular"  alt="Language: Angular">
+      <img  src="https://img.shields.io/static/v1?label=PDEG&message=Steam&color=2a475e&style=for-the-badge&logo=Steam"  alt="Language:Steam">
     </a>
     <a href="#">
-      <img  src="https://img.shields.io/static/v1?label=Language&message=Bootstrap&color=563d7c&style=for-the-badge&logo=Bootstrap"  alt="Language: Bootstrap">
+      <img  src="https://img.shields.io/static/v1?label=Tunel&message=Playit.gg&color=563d7c&style=for-the-badge&logo=Play"  alt="Language: Playit">
     </a>
     <a href="#">
-        <img src="https://img.shields.io/static/v1?label=Language&message=SASS&color=ff69b4&style=for-the-badge&logo=SASS" alt="Language: SASS">
+        <img src="https://img.shields.io/static/v1?label=Languaje&message=C++ &color=red&style=for-the-badge&logo=C" alt="Language: C++">
     </a>
     <a href="#">
-		<img  src="https://img.shields.io/static/v1?label=Language&message=Java&color=red&style=for-the-badge&logo=Java"  alt="Language: Java">
+		<img  src="https://img.shields.io/static/v1?label=Languaje&message=Python&color=ffde21&style=for-the-badge&logo=Python"  alt="Language: Python">
 	</a>
 	<a href="#">
 		<img src="https://img.shields.io/static/v1?label=Framework&message=Springboot&color=green&style=for-the-badge&logo=Ghost"  alt="Language: Springboot">
