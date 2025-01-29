@@ -8,10 +8,10 @@
         <img src="https://img.shields.io/static/v1?label=Autor&message=Guillem&color=00ba6d&style=for-the-badge&logo=LinkedIn" alt="Author: Guillem">
     </a>
     <a href="#">
-        <img src="https://img.shields.io/static/v1?label=VMs&message=Docker&color=blue&style=for-the-badge&logo=Docker" alt="Docker:Docker">
+        <img src="https://img.shields.io/static/v1?label=MV&message=Docker&color=blue&style=for-the-badge&logo=Docker" alt="Docker:Docker">
     </a>
     <a href="#">
-        <img src="https://img.shields.io/static/v1?label=OS&message=Ubuntu&color=orange&style=for-the-badge&logo=Ubuntu" alt="Languaje:Ubuntu  ">
+        <img src="https://img.shields.io/static/v1?label=SO&message=Ubuntu&color=orange&style=for-the-badge&logo=Ubuntu" alt="Languaje:Ubuntu  ">
     </a>
   <br>
     <a  href="#">
@@ -25,9 +25,6 @@
     </a>
     <a href="#">
 		<img  src="https://img.shields.io/static/v1?label=Languaje&message=Python&color=ffde21&style=for-the-badge&logo=Python"  alt="Language: Python">
-	</a>
-	<a href="#">
-		<img src="https://img.shields.io/static/v1?label=Framework&message=Springboot&color=green&style=for-the-badge&logo=Ghost"  alt="Language: Springboot">
 	</a>
     </p>
 </div>
