@@ -5,11 +5,10 @@
             ROCHosting<br>
             <br><br>
         </em>
-    <a href="https://www.linkedin.com/in/yuri-silva99/" target="_blank">
-        <img src="https://img.shields.io/static/v1?label=Author&message=Yuri&color=00ba6d&style=for-the-badge&logo=LinkedIn" alt="Author: Yuri">
+        <img src="https://img.shields.io/static/v1?label=Autor&message=Guillem&color=00ba6d&style=for-the-badge&logo=LinkedIn" alt="Author: Guillem">
     </a>
     <a href="#">
-        <img src="https://img.shields.io/static/v1?label=Language&message=Typescript&color=blue&style=for-the-badge&logo=Typescript" alt="Language: Typescript">
+        <img src="https://img.shields.io/static/v1?label=Languaje&message=Typescript&color=blue&style=for-the-badge&logo=Typescript" alt="Languaje: Typescript">
     </a>
     <a href="#">
         <img src="https://img.shields.io/static/v1?label=Language&message=Javascript&color=yellow&style=for-the-badge&logo=JavaScript" alt="Language: Javascript">
