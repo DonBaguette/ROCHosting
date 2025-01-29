@@ -45,7 +45,7 @@
 <div>
     <p align="center">
     <em>
-        ROCHosting es un proyecto de SMX2, desarrollado por Guillem Ariza, cuyo objetivo es ofrecer un servidor de Valheim disponible 24/7 para que todo el mundo pueda acceder a él. El servidor está diseñado para ser de fácil acceso y confiable, con características adicionales como copias de seguridad automáticas y soporte para mods.
+        ROCHosting es un proyecto de SMX2, desarrollado por Guillem Ariza, cuyo objetivo es ofrecer un servidor de Valheim disponible 24/7 para que todo el mundo pueda 	acceder a él. El servidor está diseñado para ser de fácil acceso y confiable, con características adicionales como copias de seguridad automáticas y soporte para mods.
     </em>
     </p>
 </div>
@@ -57,27 +57,29 @@
     </em>
  </p>
  
-- **Servidor 24/7:** El servidor de Valheim estará disponible las 24 horas, los 7 días de la semana, para que todos los jugadores puedan unirse en cualquier momento.
-- **Copias de seguridad automáticas:** El sistema realizará copias de seguridad periódicas para garantizar que el progreso no se pierda.
-- **Soporte para mods:** El servidor estará configurado para permitir mods, ofreciendo a los jugadores la posibilidad de personalizar su experiencia de juego
-- **Optimización del rendimiento:** El servidor estará optimizado para asegurar la mejor experiencia de juego sin caídas ni sobrecarga.
+- **Servidor 24/7:** *El servidor de Valheim estará disponible las 24 horas, los 7 días de la semana, para que todos los jugadores puedan unirse en cualquier momento.*
+- **Copias de seguridad automáticas:** *El sistema realizará copias de seguridad periódicas para garantizar que el progreso no se pierda.*
+- **Soporte para mods:** *El servidor estará configurado para permitir mods, ofreciendo a los jugadores la posibilidad de personalizar su experiencia de juego*
+- **Optimización del rendimiento:** *El servidor estará optimizado para asegurar la mejor experiencia de juego sin caídas ni sobrecarga.*
 
-## 👓Revised Concepts
+## 👓Requerimientos del sistema
 
  <p align="center">
     <em>
-        (Você pode colocar alguns conceitos usados no seu Projeto que esteja revisando ou que acha importante destacar)<br>
-        (You can put some concepts used in your Project that you are reviewing or that you think is important to highlight)<br>
+Los requerimientos del sistema varían dependiendo de varios factores. La cantidad de jugadores conectados es uno de los principales factores que influye en el rendimiento, ya que a más jugadores, mayor será la carga sobre el servidor, especialmente en cuanto a procesamiento de datos y actualizaciones del mundo. Además, el uso de mods puede aumentar considerablemente los recursos necesarios, ya que introducen nuevas mecánicas y objetos que deben ser procesados constantemente por el servidor.
     </em>
  </p>
 
-- Angular Componentization
-- Use of Routes
-- API consumption
-- Posts, Themes and User CRUD
-- Custom Alerts, Sorting, Searching and Admin Role
-- Control of Logged Users
-- Documentation with Compodoc
+**Requisitos del servidor**
+  - **Hardware**
+    - **Procesador:** CPU 4 Núcleos o superior
+    - **Memoria RAM:** 8GB RAM
+    - **Almacenamiento:** 50GB - 100GB 
+    - **Conexion internet:**
+  
+  
+  
+
 ## 📕Installation
 
 <p align="center">
