@@ -1,7 +1,7 @@
 <h1 align="center">
-	<img src=https://github.com/DonBaguette/ROCHosting/blob/main/HULL%20B.png?raw=true
+	<align: left;">
+    <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/HULL%20B.png?raw=true
   <p align="center">
-        <em>
             ROCHosting<br>
             <br><br>
         </em>
