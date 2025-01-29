@@ -1,20 +1,9 @@
-<p align="center">
-    <em>
-        (Coloque uma imagem que represente o seu Projeto)<br>
-        (Insert an image that represents your Project)
-    </em>
-</p>
-
 <h1 align="center">
-	<img src="https://angular.io/assets/images/logos/angular/angular.svg"  alt="Logo"  width="240"><br><br>
-    Título do seu Projeto / Title of your Project
-</h1>
-
-<div>
-    <p align="center">
+	<img src=https://github.com/DonBaguette/ROCHosting/blob/main/HULL%20B.png?raw=true
+  <p align="center">
         <em>
-            (Coloque aqui as linguagens que construíram seu Projeto.)<br>
-            (Put here the languages that built your Project.)<br><br>
+            ROCHosting<br>
+            <br><br>
         </em>
     <a href="https://www.linkedin.com/in/yuri-silva99/" target="_blank">
         <img src="https://img.shields.io/static/v1?label=Author&message=Yuri&color=00ba6d&style=for-the-badge&logo=LinkedIn" alt="Author: Yuri">
