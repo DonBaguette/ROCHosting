@@ -41,7 +41,7 @@
  <a href="#license">License</a>
 </p>
 
-## 📌About
+## 📌Acerca de
 <div>
     <p align="center">
     <em>
@@ -50,7 +50,7 @@
     </p>
 </div>
 
-## 🚀Features
+## 🚀Características
 
  <p align="center">
     <em>
@@ -73,14 +73,16 @@ Los requerimientos del sistema varían dependiendo de varios factores. La cantid
 **Requisitos del servidor**
   - **Hardware**
     - **Procesador:** CPU 4 Núcleos o superior
-    - **Memoria RAM:** 8GB RAM
-    - **Almacenamiento:** 50GB - 100GB 
-    - **Conexion internet:**
+    - **Memoria RAM:** 8GB RAM o superior
+    - **Almacenamiento:** 50GB o superior
+    - **Conexion internet:** 10Mbps o superior
+  - **Software**
+    - **Sistema Operativo:** Linux (Ubuntu Desktop)
+    - Docker
+    - Valheim Server
+    - MySQL
   
-  
-  
-
-## 📕Installation
+  ## 📕Installation
 
 <p align="center">
     <em>
