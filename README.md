@@ -6,7 +6,6 @@
 </p>
 
 <h1 align="center">
-	![image alt](https://github.com/DonBaguette/ROCHosting/blob/main/HULL%20B.png?raw=true)
 	<img src="https://angular.io/assets/images/logos/angular/angular.svg"  alt="Logo"  width="240"><br><br>
     Título do seu Projeto / Title of your Project
 </h1>
