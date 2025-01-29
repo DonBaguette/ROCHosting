@@ -32,9 +32,9 @@
 ## Table of Contents
 
 <p align="center">
- <a href="#about">About</a> •
- <a href="#features">Features</a> •
- <a href="#revised-concepts">Revised Concepts</a> • 
+ <a href="#Acerca de">Acerca de</a> •
+ <a href="#Características">Características</a> •
+ <a href="#Requerimientos del sistema">Requerimientos del sistema</a> • 
  <a href="#installation">Installation</a> • 
  <a href="#getting-started">Get Started</a> • 
  <a href="#technologies">Technologies</a> • 
