@@ -29,7 +29,7 @@
     </p>
 </div>
 
-## Table of Contents
+## Tabla de contenido
 
 <p align="center">
  <a href="#Acerca de">Acerca de</a> •
