@@ -35,10 +35,10 @@
  <a href="#Acerca de">Acerca de</a> •
  <a href="#Características">Características</a> •
  <a href="#Requerimientos del sistema">Requerimientos del sistema</a> • 
- <a href="#installation">Installation</a> • 
- <a href="#getting-started">Get Started</a> • 
- <a href="#technologies">Technologies</a> • 
- <a href="#license">License</a>
+ <a href="#installation">Instalación</a> • 
+ <a href="#getting-started"></a> • 
+ <a href="#technologies"></a> • 
+ <a href="#license"></a>
 </p>
 
 ## 📌Acerca de
