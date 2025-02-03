@@ -82,105 +82,18 @@ Los requerimientos del sistema varían dependiendo de varios factores. La cantid
     - Valheim Server
     - MySQL
   
-  ## 📕Installation
+  ## 📕Instalación
 
 <p align="center">
     <em>
-        (Explique como uma pessoa desenvolvedora pode estar fazendo a instalação do seu Projeto em outra máquina. Aqui cabe a você, e também as especificações do seu projeto, como explicar a forma de instalação)<br><br>
-        (Explain how another developer might be installing your Project on their machine. Here it's up to you, and also the specifications of your project, how to explain how to install it)<br>
+        
     </em>
 </p>
 
-**You must have already installed**
-- [Node.js](https://nodejs.org/en/)
-- [Npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
-- [Angular](https://angular.io/guide/setup-local)
-- [MySQL](https://dev.mysql.com/downloads/)
+**Deberias tener instalado**
+- 
+- 
+- 
+- 
 
-**Recommendations**
--   It is recommended that you have installed Google Chrome or Edge
--   I recommend using VSCode as development IDE
 
-**Let's divide it into 3 steps.**
-1. Clone this repository
-2. Install dependencies
-3. Initializing the BackEnd
-  ---
-### 1. Clone this repository
-```
-git clone Link of the your Repository 
-```
----
-### 2. Install the dependencies
-```
-npm install
-```
-or
-```
-yarn
-```
-
-*Make sure your internet is stable, as this may take a while* 
-
-### 3. Initializing the BackEnd
-
-If you have a ***BackEnd local***, start it before the Angular Project
-
-If you have a ***Hosted BackEnd***, you'll need configure the Routes and Models of Angular Project with your BackEnd 
-
-## 🎮Getting Started
-
-<p align="center">
-    <em>
-        (Após a instalação, aqui você explica como outra pessoa desenvolvedora pode estar iniciando o seu Projeto. Aqui cabe a você, e também as especificações do seu projeto, como explicar a forma de inicialização)<br><br>
-        (After installation, here you explain how another developer can be starting your Project. Here it's up to you, and also the specifications of your project, how to explain how to start)<br>
-    </em>
-</p>
-
-1. Run the backend or configure as explained above 
-
-2. Run the project
-```
-ng serve
-```
-3. Now, open your browser and navigate to: http://localhost:4200
-
-## 🌐Technologies
-
-<p align="center">
-    <em>
-        (Liste as tecnologias usadas no seu Projeto)<br>
-        (List the technologies used in your Project)<br>
-    </em>
-</p>
-
-- [AngularJS](https://angular.io/)
-- [TypeScript](https://www.typescriptlang.org/)
-
-## 📝License
-
-<p align="center">
-    <em>
-        (Escreva algumas informações sobre a Licença do seu Projeto, e por quem foi feito. Recomendo colocar um link para a Licença do projeto e no seu nome coloque o link da sua rede social profisional: Linkedin, Behance, Site Pessoal, etc.)<br><br>
-        (Write some information about your Project License, and by whom it was made. I recommend putting a link to the Project License and in your name put the link to your professional social network: Linkedin, Behance, Personal Site, etc.)<br>
-    </em>
-</p>
-
-Released in 2021.
-
-This project is under the [MIT license](https://github.com/Yuri-stack/ReadMe/blob/main/LICENSE).
-
-Made with love by [Yuri Oliveira](https://github.com/Yuri-stack) 🚀.
-
-##  Links
-
-<p align="center">
-    <em>
-        Vou deixar alguns links que podem ser úteis para você criar os ReadMes dos seus projetos:<br>
-        I'll leave some links that might be useful for you to create the ReadMes of your projects:<br>
-    </em>
-</p>
-
-- [Shields.io](https://shields.io/) | Para criar as Badges / To create the Badges
-- [StackEdit](https://stackedit.io/app#) | Para ajudar a criar os ReadMe / To help create the ReadMe
-- [Basic Syntax | Markdown Guide](https://www.markdownguide.org/basic-syntax/) | Guia de Markdown / Markdown Guide
