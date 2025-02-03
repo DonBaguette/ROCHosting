@@ -58,10 +58,10 @@
     </em>
  </p>
  
-- **Servidor 24/7:** *El servidor de Valheim estará disponible las 24 horas, los 7 días de la semana, para que todos los jugadores puedan unirse en cualquier momento.*
-- **Copias de seguridad automáticas:** *El sistema realizará copias de seguridad periódicas para garantizar que el progreso no se pierda.*
-- **Soporte para mods:** *El servidor estará configurado para permitir mods, ofreciendo a los jugadores la posibilidad de personalizar su experiencia de juego*
-- **Optimización del rendimiento:** *El servidor estará optimizado para asegurar la mejor experiencia de juego sin caídas ni sobrecarga.*
+- **Implementación con Docker:** *Cada servidor de juego se ejecuta en su propio contenedor para garantizar aislamiento y fácil administración.*
+- **Soporte para múltiples juegos:** *Comenzando con Valheim, con la posibilidad de añadir otros juegos en el futuro como Minecraft, CS:GO, Rust, entre otros..*
+- **Interfaz Web:** *Permite seleccionar, iniciar y administrar los servidores de manera sencilla*
+- **Uso de túneles con Playit.gg:** * Evita la necesidad de abrir puertos manualmente, facilitando la conexión desde cualquier lugar*
 
 ## 👓Requerimientos del sistema
 
