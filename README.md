@@ -58,10 +58,11 @@
     </em>
  </p>
  
-- **Implementación con Docker:** *Cada servidor de juego se ejecuta en su propio contenedor para garantizar aislamiento y fácil administración.*
+- **Implementación con Docker:** *Cada servidor de juego se ejecuta en su propio contenedor para garantizar aislamiento y fácil administración*
 - **Soporte para múltiples juegos:** *Comenzando con Valheim, con la posibilidad de añadir otros juegos en el futuro como Minecraft, CS:GO, Rust, entre otros..*
 - **Interfaz Web:** *Permite seleccionar, iniciar y administrar los servidores de manera sencilla*
-- **Uso de túneles con Playit.gg:** * Evita la necesidad de abrir puertos manualmente, facilitando la conexión desde cualquier lugar*
+- **Uso de túneles con Playit.gg:** *Evita la necesidad de abrir puertos manualmente, facilitando la conexión desde cualquier lugar*
+- **Escalabilidad:** *Diseñado para crecer, con la posibilidad de convertirse en un servicio multiusuario en el futuro*
 
 ## 👓Requerimientos del sistema
 
