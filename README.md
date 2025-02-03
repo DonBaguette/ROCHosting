@@ -45,7 +45,8 @@
 <div>
     <p align="center">
     <em>
-        ROCHosting es un proyecto de SMX2, desarrollado por Guillem, cuyo objetivo es ofrecer un servidor de Valheim disponible 24/7 para que todo el mundo pueda acceder a él. El servidor está diseñado para ser de fácil acceso y confiable, con características adicionales como copias de seguridad automáticas y soporte para mods.
+         ROCHosting es una plataforma que permite desplegar, administrar y acceder a servidores de juegos utilizando Docker. Inicialmente, el proyecto está diseñado para uso personal, con la posibilidad de expandirse a un sistema multiusuario en el futuro.
+	El objetivo principal es facilitar la gestión de servidores de juegos en contenedores Docker, proporcionando una interfaz web intuitiva para iniciar, detener y configurar diferentes servidores sin necesidad de abrir puertos manualmente, gracias a la integración 	con Playit.gg.
     </em>
     </p>
 </div>
