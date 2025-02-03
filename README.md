@@ -5,26 +5,26 @@
             ROCHosting<br>
             <br><br>
         </em>
-        <img src="https://img.shields.io/static/v1?label=Autor&message=Guillem&color=00ba6d&style=for-the-badge&logo=LinkedIn" alt="Author: Guillem">
+        <img src="https://img.shields.io/static/v1?label=SO&message=Ubuntu&color=orange&style=for-the-badge&logo=Ubuntu" alt="Author: Ubuntu">
     </a>
     <a href="#">
-        <img src="https://img.shields.io/static/v1?label=MV&message=Docker&color=blue&style=for-the-badge&logo=Docker" alt="Docker:Docker">
+        <img src="https://img.shields.io/static/v1?label=CV&message=Docker&color=blue&style=for-the-badge&logo=Docker" alt="Docker:Docker">
     </a>
     <a href="#">
-        <img src="https://img.shields.io/static/v1?label=SO&message=Ubuntu&color=orange&style=for-the-badge&logo=Ubuntu" alt="Languaje:Ubuntu  ">
+        <img src="https://img.shields.io/static/v1?label=CV&message=DockerCompose&color=0067dc&style=for-the-badge&logo=Docker" alt="Languaje:DCompose">
     </a>
   <br>
     <a  href="#">
-      <img  src="https://img.shields.io/static/v1?label=PDEG&message=Steam&color=2a475e&style=for-the-badge&logo=Steam"  alt="Language:Steam">
+      <img  src="https://img.shields.io/static/v1?label=SWP&message=Nginx&color=209237&style=for-the-badge&logo=Nginx"  alt="Language:Nginx">
     </a>
     <a href="#">
-      <img  src="https://img.shields.io/static/v1?label=Tunel&message=Playit.gg&color=563d7c&style=for-the-badge&logo=Play"  alt="Language: Playit">
+      <img  src="https://img.shields.io/static/v1?label=SWP&message=Playit.gg&color=563d7c&style=for-the-badge&logo=Play"  alt="Language: Playit">
     </a>
     <a href="#">
-        <img src="https://img.shields.io/static/v1?label=Languaje&message=C++ &color=red&style=for-the-badge&logo=C" alt="Language: C++">
+        <img src="https://img.shields.io/static/v1?label=LP&message=HTML &color=E65100&style=for-the-badge&logo=HTML" alt="Language: HTML">
     </a>
     <a href="#">
-		<img  src="https://img.shields.io/static/v1?label=Languaje&message=Python&color=ffde21&style=for-the-badge&logo=Python"  alt="Language: Python">
+		<img  src="https://img.shields.io/static/v1?label=LP&message=Python&color=yellow&style=for-the-badge&logo=Python"  alt="Language:Python ">
 	</a>
     </p>
 </div>
