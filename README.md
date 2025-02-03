@@ -83,6 +83,8 @@ Los requerimientos del sistema varían dependiendo de varios factores. La cantid
     - Docker
     - Valheim Server
     - MySQL
+
+
   
   ## 📕Instalación
 
