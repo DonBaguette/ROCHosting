@@ -61,32 +61,52 @@
 - **Implementación con Docker:** *Cada servidor de juego se ejecuta en su propio contenedor para garantizar aislamiento y fácil administración*
 - **Soporte para múltiples juegos:** *Comenzando con Valheim, con la posibilidad de añadir otros juegos en el futuro como Minecraft, CS:GO, Rust, entre otros..*
 - **Interfaz Web:** *Permite seleccionar, iniciar y administrar los servidores de manera sencilla*
-- **Uso de túneles con Playit.gg:** *Evita la necesidad de abrir puertos manualmente, facilitando la conexión desde cualquier lugar*
 - **Escalabilidad:** *Diseñado para crecer, con la posibilidad de convertirse en un servicio multiusuario en el futuro*
+- **FireWall** *Garantiza la seguridad en la red para que no puedan atacarte ni tumbar los servidores*
 
-## 👓Requerimientos del sistema
+## 💿Especificaciones del sistema
 
  <p align="center">
     <em>
-Los requerimientos del sistema varían dependiendo de varios factores. La cantidad de jugadores conectados es uno de los principales factores que influye en el rendimiento, ya que a más jugadores, mayor será la carga sobre el servidor, especialmente en cuanto a procesamiento de datos y actualizaciones del mundo. Además, el uso de mods puede aumentar considerablemente los recursos necesarios, ya que introducen nuevas mecánicas y objetos que deben ser procesados constantemente por el servidor.
-    </em>
  </p>
 
-**Requisitos del servidor**
+**Máquina Host**
   - **Hardware**
-    - **Procesador:** CPU 4 Núcleos o superior
-    - **Memoria RAM:** 8GB RAM o superior
-    - **Almacenamiento:** 50GB o superior
-    - **Conexion internet:** 10Mbps o superior
+    - **Procesador:** 16 Núcleos
+    - **Memoria RAM:** 32GB
+    - **Almacenamiento:** 3TB 
   - **Software**
-    - **Sistema Operativo:** Linux (Ubuntu Desktop)
-    - Docker
-    - Valheim Server
-    - MySQL
+    - **Sistema Operativo:** Windows 11
 
+**Máquina para pfSense (FireWall y DHCP)**
+  - **Hardware**
+    - **Procesador:** 1 Núcleo 
+    - **Memoria RAM:** 16GB / 32GB
+    - **Almacenamiento:** 25GB
+    - **Conexion internet:** Interfaz1 Wan (Red NAT) / Interfaz2 Lan (Red Interna)
+  - **Software**
+    - **Sistema Operativo:** Pfsense
+
+**Máquina para DNS**
+  - **Hardware**
+    - **Procesador:** 1 Núcleo 
+    - **Memoria RAM:** 1GB
+    - **Almacenamiento:** 10GB
+    - **Conexion internet:** Conexión Red Interna
+  - **Software**
+    - **Sistema Operativo:** Windows Server
+
+**Máquina para Contenedores Docker y Web**
+  - **Hardware**
+    - **Procesador:** 4 Núcleos 
+    - **Memoria RAM:** 8GB / 16GB
+    - **Almacenamiento:** 100GB
+    - **Conexion internet:** Conexión Red Interna
+  - **Software**
+    - **Sistema Operativo:** Ubuntu Desktop
 
   
-  ## 📕Instalación
+  ## 📕Roles y Responsabilidades
 
 <p align="center">
     <em>
@@ -94,10 +114,20 @@ Los requerimientos del sistema varían dependiendo de varios factores. La cantid
     </em>
 </p>
 
-**Deberias tener instalado**
-- 
-- 
-- 
-- 
+- **Administrador de Red:** Configurar pfSense, DHCP y DNS *(Guillem)*
+- **Desarrollador Backend:** Desarrollar la gestión de contenedores y copias de seguridad *(Guillem)*
+- **Desarrollador Página web:** Crear la interfaz web para gestión y monitoreo *(Guillem)*
+- **Administrador de Infraestructura:** Gestionar máquinas virtuales y rendimiento *(Guillem)*
+
+## 📄Diagrama de la Red
+
+<p align="center">
+    <em>
+        
+    </em>
+</p>
+
+
+
 
 
