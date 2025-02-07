@@ -111,7 +111,6 @@
 <p align="center">
     <em>
         
-    </em>
 </p>
 
 - **Administrador de Red:** Configurar pfSense, DHCP y DNS *(Guillem)*
@@ -124,9 +123,24 @@
 <p align="center">
     <em>
         
-    </em>
 </p>
 
+<h1 align="center">
+	<align: left;">
+    <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Diagrama%20Red.png?raw=true
+  <p align="center">
+
+  ## 📈Diagrama de Gantt (En proceso)
+
+<p align="center">
+    <em>
+        
+</p>
+
+- **Semana** **: Configuración de máquinas virtuales y pfSense.
+- **Semana** **: Instalación de Docker y desarrollo de la interfaz web.
+- **Semana** **: Implementación de copias de seguridad y monitoreo.
+- **Semana** **: Pruebas y ajustes finales.
 
 
 
