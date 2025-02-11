@@ -142,6 +142,15 @@
 - **Semana** **: Implementación de copias de seguridad y monitoreo.
 - **Semana** **: Pruebas y ajustes finales.
 
+## 📁Guías de uso 
+
+<p align="center">
+    <em>
+        
+</p>
+
+- **DNS**:
+- **DHCP**:
 
 
 
