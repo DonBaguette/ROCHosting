@@ -80,8 +80,8 @@
 
 **Máquina para pfSense (FireWall y DHCP)**
   - **Hardware**
-    - **Procesador:** 1 Núcleo 
-    - **Memoria RAM:** 16GB / 32GB
+    - **Procesador:** 2 Núcleo 
+    - **Memoria RAM:** 2GB
     - **Almacenamiento:** 25GB
     - **Conexion internet:** Interfaz1 Wan (Red NAT) / Interfaz2 Lan (Red Interna)
   - **Software**
@@ -89,8 +89,8 @@
 
 **Máquina para DNS**
   - **Hardware**
-    - **Procesador:** 1 Núcleo 
-    - **Memoria RAM:** 1GB
+    - **Procesador:** 2 Núcleo 
+    - **Memoria RAM:** 4GB
     - **Almacenamiento:** 10GB
     - **Conexion internet:** Conexión Red Interna
   - **Software**
@@ -149,8 +149,15 @@
         
 </p>
 
-- **DNS**:
-- **DHCP**:
+- **DNS**
+    - **¿Qué es?:** El DNS es un sistema que traduce nombres de dominio legibles (como google.com) en direcciones IP numéricas que los ordenadores usan para comunicarse en la red.
+    - **¿Por qué es necesario?:** El DNS es necesario porque facilita la navegación en Internet al traducir nombres de dominio fáciles de recordar (como google.com) en direcciones IP que los ordenadores utilizan para comunicarse. Sin DNS, tendríamos que memorizar largas secuencias de números para acceder a los sitios web.
+    - **Pasos a seguir:**
+
+- **DHCP**
+    - **¿Qué es?:** El DHCP es un protocolo que asigna automáticamente direcciones IP y otros parámetros de red a los dispositivos en una red.
+    - **¿Por qué es necesario?:** Es necesario porque simplifica la gestión de direcciones IP, evitando la configuración manual y reduciendo errores. Además, optimiza el uso de direcciones IP y permite que los dispositivos se conecten fácilmente a la red sin que el usuario tenga que intervenir
+    - **Pasos a seguir:**
 
 
 
