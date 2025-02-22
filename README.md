@@ -199,6 +199,10 @@
 - **¿CÓMO SE INSTALA Y CONFIGURA PFSENSE?:** Pfsense se instala descargando su imagen ISO desde la web oficial la cual la podemos encontrar aqui [PFSENSE](https://www.pfsense.org/download/) Hay que tener considerado lo siguiente si queremos instalarlo en un entorno virtual.
   	- Asignar suficientes recursos (Minimo: 1 CPU, 2GB RAM, 25GB DISCO)
   	- Configurar correctamente en virtualbox las interfaces de red que vamos a utilizar
+  	<em>
+   </p>
+   
+- **¿CONSIDERAS PFSENSE UNA OPCIÓN VIABLE PARA EMPRESAS Y REDES DOMÉSTICAS?:** Sí, pfSense creo que es una buena opción tanto para empresas como para redes domésticas, ya que es bastante fácil de utilizar, todo se entiende bien y tiene varias herramientas que se pueden utilizar. Normalmente, los firewalls se utilizan más en empresas, pero, en definitiva, también se podrían utilizar en una red doméstica.
   </details>
 
 
