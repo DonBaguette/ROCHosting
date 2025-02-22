@@ -149,34 +149,57 @@
         
 </p>
 
-
-
 <details>
   <summary><strong>📂DNS & DHCP<strong></summary>
+    <em>
+        
+</p>
 
 **DNS**
-- **¿Qué es?:** El DNS es un sistema que traduce nombres de dominio legibles (como google.com) en direcciones IP numéricas que los ordenadores usan para comunicarse en la red.
-- **¿Por qué es necesario?:** El DNS es necesario porque facilita la navegación en Internet al traducir nombres de dominio fáciles de recordar (como google.com) en direcciones IP que los ordenadores utilizan para comunicarse. Sin DNS, tendríamos que memorizar largas secuencias de números para acceder a los sitios web.
-- **¿Dónde hay información oficial?:** En el propio microsoft oficial podemos encontra información sobre ello [DNS](https://learn.microsoft.com/es-es/windows-server/networking/dns/dns-overview)
+- **¿QUÉ ES?:** El DNS es un sistema que traduce nombres de dominio legibles (como google.com) en direcciones IP numéricas que los ordenadores usan para comunicarse en la red.
+- **¿POR QUÉ ES NECESARIO?:** El DNS es necesario porque facilita la navegación en Internet al traducir nombres de dominio fáciles de recordar (como google.com) en direcciones IP que los ordenadores utilizan para comunicarse. Sin DNS, tendríamos que memorizar largas secuencias de números para acceder a los sitios web.
+- **¿DÓNDE HAY INFORMACIÓN OFICIAL?:** En el propio microsoft oficial podemos encontra información sobre ello [DNS](https://learn.microsoft.com/es-es/windows-server/networking/dns/dns-overview)
 - **Pasos a seguir:**
 
 **DHCP**
-- **¿Qué es?:** El DHCP es un protocolo que asigna automáticamente direcciones IP y otros parámetros de red a los dispositivos en una red.
-- **¿Por qué es necesario?:** Es necesario porque simplifica la gestión de direcciones IP, evitando la configuración manual y reduciendo errores. Además, optimiza el uso de direcciones IP y permite que los dispositivos se conecten fácilmente a la red sin que el usuario tenga que intervenir
-- **¿Dónde hay información oficial?:** En el propio microsoft oficial podemos encontra información sobre ello [DHCP](https://learn.microsoft.com/es-es/windows-server/networking/technologies/dhcp/dhcp-top)
+- **¿QUÉ ES?:** El DHCP es un protocolo que asigna automáticamente direcciones IP y otros parámetros de red a los dispositivos en una red.
+- **¿POR QUÉ ES NECESARIO?:** Es necesario porque simplifica la gestión de direcciones IP, evitando la configuración manual y reduciendo errores. Además, optimiza el uso de direcciones IP y permite que los dispositivos se conecten fácilmente a la red sin que el usuario tenga que intervenir
+- **¿DÓNDE HAY INFORMACIÓN OFICIAL?:** En el propio microsoft oficial podemos encontra información sobre ello [DHCP](https://learn.microsoft.com/es-es/windows-server/networking/technologies/dhcp/dhcp-top)
 - **Pasos a seguir:**
 </details>
 
 <details>
   <summary><strong>📂APACHE<strong></summary>
+    <em>
+        
+</p>
 
 **APACHE**
-- **¿Qué es?:** Apache es un servidor web de código abierto que utiliza HTML.
-- **¿Por qué es necesario?:** Apache es necesario si quieres crear una web alojada por ti mismo. En lugar de utilizar servicios de hosting de pago, puedes alojar tus propias páginas web.
-- **¿Dónde hay información oficial?:** Puedes encontrar información oficial en la página web de Apache, donde disponemos de todo tipo de recursos sobre el tema [APACHE](https://httpd.apache.org/)
+- **¿QUÉ ES?:** Apache es un servidor web de código abierto que utiliza HTML.
+- **¿POR QUÉ ES NECESARIO?:** Apache es necesario si quieres crear una web alojada por ti mismo. En lugar de utilizar servicios de hosting de pago, puedes alojar tus propias páginas web
+- **¿DÓNDE HAY INFORMACIÓN OFICIAL?:** Puedes encontrar información oficial en la página web de Apache, donde hay de todo tipo de información sobre el tema [APACHE](https://httpd.apache.org/)
 </details>
 
+<details>
+  <summary><strong>📂PFSENSE<strong></summary>
+    <em>
+        
+</p>
 
+**PFSENSE**
+- **¿QUÉ ES PFSENSE Y PARA QUÉ SE UTILIZA?:** PfSense es un sistema operativo basado en FreeBSD diseñado para funcionar como un firewall. Se utiliza principalmente para poder administrar y proteger redes
+- **¿QUÉ ES FREEBSD?:** FreeBSD es un sistema operativo libre de codigo abierto, en 2005 era el sistema operativo abierto mas popular de todos, actualmente ya no se utiliza tanto pero aún continua activo
+- **¿CUÁLES SON LAS PRINCIPALES CARACTERÍSTICAS DE PFSENSE?:**
+	- Firewall
+ 	- Soporte para VPN
+  	- Control de tráfico
+  	- Sistema IDS/IPS
+  	- Gestión mediante interfaz web
+  	- Soporte para múltiples conexiones WAN Y VLANs
+- **¿CÓMO SE INSTALA Y CONFIGURA PFSENSE?:** Pfsense se instala descargando su imagen ISO desde la web oficial la cual la podemos encontrar aqui [PFSENSE](https://www.pfsense.org/download/) Hay que tener considerado lo siguiente si queremos instalarlo en un entorno virtual.
+  	- Asignar suficientes recursos (Minimo: 1 CPU, 2GB RAM, 25GB DISCO)
+  	- Configurar correctamente en virtualbox las interfaces de red que vamos a utilizar
+  </details>
 
 
 
