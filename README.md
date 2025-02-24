@@ -276,8 +276,11 @@
    </p>
    
 - **¿Consideras Pfsense una opción viable para empresas y redes domésticas?:** Sí, pfSense creo que es una buena opción tanto para empresas como para redes domésticas, ya que es bastante fácil de utilizar, todo se entiende bien y tiene varias herramientas que se pueden utilizar. Normalmente, los firewalls se utilizan más en empresas, pero, en definitiva, también se podrían utilizar en una red doméstica.
-<details>
-    <summary>⚙️ Pasos para instalar Pfsense</summary>
+
+- **¿Qué es el port forward? Explica cómo lo has configurado:** El Port Forwarding es una técnica que permite que conexiones externas lleguen a un dispositivo dentro de una red privada
+
+<details> 
+<summary>⚙️ Pasos para instalar Pfsense y Port forward</summary>
         <em>
         
 </p>
@@ -301,6 +304,30 @@
    	- Asignar interfaces
    	- WAN > Internet
    	- LAN > Red Interna
+5. **Port Forwarding**
+	- Ir a Firewall > NAT
+	- Seleccionar pestaña Port Forward
+	- Hacer click en ADD
+	- Configurar los siguientes campos
+		- Interface: WAN
+		- Protocol: TCP/UDP
+		- Destination Port Range:
+			- From: HTTP (80)
+			- To: El mismo puerto o uno diferente
+     		- Redirect Target IP
+        		- 10.0.0.11
+        	- Redirect Target Port:
+           		- Puerto HTTP (80)
+	- Guardar y aplicar cambios
+6. **Reglas Firewall**
+   	- Ir a Firewall > Rules > WAN
+   	- Agregar nueva regla
+   		- Action: Pass
+   	   	- Protocol: TCP o UDP
+   	   	- Source: Any
+   	   	- Destination: WAN Address y el puerto
+   	   	- Description: Lo que quieras
+	- Guardar y aplicar cambios
 5. **Guardar cambios y aplicar configuración**
 	- Ahora guardamos los cambios y ya estaría funcionando el Pfsense
        
