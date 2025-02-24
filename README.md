@@ -276,6 +276,41 @@
    </p>
    
 - **¿Consideras Pfsense una opción viable para empresas y redes domésticas?:** Sí, pfSense creo que es una buena opción tanto para empresas como para redes domésticas, ya que es bastante fácil de utilizar, todo se entiende bien y tiene varias herramientas que se pueden utilizar. Normalmente, los firewalls se utilizan más en empresas, pero, en definitiva, también se podrían utilizar en una red doméstica.
+<details>
+    <summary>⚙️ Pasos para instalar Pfsense</summary>
+        <em>
+        
+</p>
+
+1. **Requisitos**
+	- Tener una Maquina Virtual Disponible
+	- Mínimo 2 interfaces de red
+	- Imagen ISO de Pfsense
+2. **Instalación de Pfsense**  
+	- Crear una nueva máquina virtual
+	- 1ª Interfaz en modo NAT
+	- 2ª Interfaz en modo red interna
+3. **Proceso instalación**  
+	- Cuando inicia la instalación seleccionar Boot Multi User y presionar Enter
+	- Aceptar la pantalla de bienvenida
+	- Selecciona "Install pfsense" y elegir el idioma
+	- Escoger el tipo de disco (Recomendado Auto UFS)
+	- Esperar a que termine la instalación y seleccionar Reboot
+	- **IMPORTANTE** Retirar la ISO antes de reiniciar
+4. **Configuración Inicial**
+   	- Asignar interfaces
+   	- WAN > Internet
+   	- LAN > Red Interna
+5. **Guardar cambios y aplicar configuración**
+	- Ahora guardamos los cambios y ya estaría funcionando el Pfsense
+       
+  </details>
+
+
+
+
+
+
   </details>
 
 
