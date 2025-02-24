@@ -178,6 +178,7 @@
 - **¿QUÉ ES?:** Apache es un servidor web de código abierto que utiliza HTML.
 - **¿POR QUÉ ES NECESARIO?:** Apache es necesario si quieres crear una web alojada por ti mismo. En lugar de utilizar servicios de hosting de pago, puedes alojar tus propias páginas web
 - **¿DÓNDE HAY INFORMACIÓN OFICIAL?:** Puedes encontrar información oficial en la página web de Apache, donde hay de todo tipo de información sobre el tema [APACHE](https://httpd.apache.org/)
+- **PROCESO INSTALACIÓN:** 
 </details>
 
 <details>
