@@ -159,33 +159,59 @@
 - **¿Qué es?:** El DNS es un sistema que traduce nombres de dominio legibles (como google.com) en direcciones IP numéricas que los ordenadores usan para comunicarse en la red.
 - **¿Por qué es necesario?:** El DNS es necesario porque facilita la navegación en Internet al traducir nombres de dominio fáciles de recordar (como google.com) en direcciones IP que los ordenadores utilizan para comunicarse. Sin DNS, tendríamos que memorizar largas secuencias de números para acceder a los sitios web.
 - **¿Dónde hay información oficial?:** En el propio microsoft oficial podemos encontra información sobre ello [DNS](https://learn.microsoft.com/es-es/windows-server/networking/dns/dns-overview)
-- **Pasos a seguir:** 
+<details>
+    <summary>⚙️ Pasos para instalar el DNS en Windows Server</summary>
+        <em>
+        
+</p>
+
+1. **Requisitos**
+	- Windows Server instalado y funcionando
+2. **Acceder a Windows Server**  
+	- Iniciar sesión en Windows Server
+3. **Instalar el servicio DNS**  
+	- Ir a Administrar > Agregar roles y características
+   	- Seleccionar Servidor DNS
+   	- Instalar y esperar
+5. **Configurar el DNS**
+   	- Ir a Herramientas > DNS
+   	- Hacer click derecho > Agregar Zona nueva
+   	- Seleccionar Zona nueva
+   	- Colocar nombre a nuestra zona
+   	- Marcar casilla (Crear un archivo nuevo con este nombre de archivo)
+   	- Finalizar
+7. **Guardar cambios y aplicar configuración**
+	- Ahora guardamos los cambios y ya estaría habilitado
+  </details>
+    
 
 **DHCP**
 - **¿Qué es?:** El DHCP es un protocolo que asigna automáticamente direcciones IP y otros parámetros de red a los dispositivos en una red.
 - **¿Por qué es necesario?:** Es necesario porque simplifica la gestión de direcciones IP, evitando la configuración manual y reduciendo errores. Además, optimiza el uso de direcciones IP y permite que los dispositivos se conecten fácilmente a la red sin que el usuario tenga que intervenir
 - **¿Dónde hay información oficial?:** En el propio microsoft oficial podemos encontra información sobre ello [DHCP](https://learn.microsoft.com/es-es/windows-server/networking/technologies/dhcp/dhcp-top)
-- **Pasos a seguir:**
-  <em>
+<details>
+    <summary>⚙️ Pasos para instalar DHCP en pfSense</summary>
+        <em>
         
 </p>
 
-**Requisitos**
-- Pfsense instalado y funcionando en una máquina virtual
-- Acceso a la interfaz web de pfSense
-
-**Acceder a Pfsense**
-- Iniciar sesión en la interfaz web de Pfsense
-
-**Habilitar el servicio DHCP**
-- Ir a Services > DHCP Server
-- Seleccionar la interfaz LAN
-- Activar la casilla (Enable DHCP Server on LAN interface)
-
-**Configurar rango de direcciones IP**
-- Definir el rango, ejemplo mio (10.0.0.11 - 10.0.0.243)
-
-**Guardar cambios y aplicar**
+1. **Requisitos**
+	- Pfsense instalado y funcionando en una máquina virtual
+	- Acceso a la interfaz web de pfSense
+2. **Acceder a Pfsense**  
+	- Iniciar sesión en la interfaz web de pfSense
+3. **Habilitar el servicio DHCP**  
+	- Ir a services > DHCP server
+   	- Seleccionar la interfaz LAN
+   	- Activar la casilla (Enable DHCP Server on LAN interface)
+5. **Configurar el rango de direcciones IP**
+   	- Definir el rango > Mi ejemplo (10.0.0.11 - 10.0.0.243)
+7. **Guardar cambios y aplicar configuración**
+	- Ahora guardamos los cambios y ya estaría habilitado
+8. **Extra**
+   	- Normalmente cuando configuras por primera vez Pfsense ya te pregunta si quieres DHCP o no y te lo hace automáticamente el
+       
+  </details>
     
 </details>
 
