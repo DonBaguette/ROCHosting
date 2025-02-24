@@ -188,6 +188,10 @@
 	- Agregar Host
 6. **Guardar cambios y aplicar configuración**
 	- Ahora guardamos los cambios y ya estaría habilitado
+<h1 align="center">
+<align: left;">
+<img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Dns.png?raw=true
+  <p align="center">
   </details>
     
 
@@ -216,6 +220,10 @@
 	- Ahora guardamos los cambios y ya estaría habilitado
 6. **Extra**
    	- Normalmente cuando configuras por primera vez Pfsense ya te pregunta si quieres DHCP o no y te lo hace automáticamente el
+<h1 align="center">
+<align: left;">
+<img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Dhcp.png?raw=true
+  <p align="center">
        
   </details>
     
@@ -330,6 +338,15 @@
 	- Guardar y aplicar cambios
 5. **Guardar cambios y aplicar configuración**
 	- Ahora guardamos los cambios y ya estaría funcionando el Pfsense
+<h1 align="center">
+<align: left;">
+<img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Rules.png?raw=true
+<p align="center">
+	
+<h1 align="center">
+<align: left;">
+<img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Port%20Forward.png?raw=true
+<p align="center">
        
   </details>
 
