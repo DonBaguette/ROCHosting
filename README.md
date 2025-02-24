@@ -232,7 +232,7 @@
 - **¿Por qué es necesario?:** Apache es necesario si quieres crear una web alojada por ti mismo. En lugar de utilizar servicios de hosting de pago, puedes alojar tus propias páginas web
 - **¿Dónde hay información oficial?:** Puedes encontrar información oficial en la página web de Apache, donde hay de todo tipo de información sobre el tema [APACHE](https://httpd.apache.org/)
 <details>
-    <summary>⚙️ Pasos para instalar APACHE en pfSense</summary>
+    <summary>⚙️ Pasos para instalar APACHE en Ubuntu Desktop</summary>
         <em>
         
 </p>
