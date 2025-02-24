@@ -173,20 +173,20 @@
 	- Ir a Administrar > Agregar roles y características
    	- Seleccionar Servidor DNS
    	- Instalar y esperar
-5. **Configurar el DNS**
+4. **Configurar el DNS**
    	- Ir a Herramientas > DNS
    	- Hacer click derecho > Agregar Zona nueva
    	- Seleccionar Zona nueva
    	- Colocar nombre a nuestra zona
    	- Marcar casilla (Crear un archivo nuevo con este nombre de archivo)
    	- Finalizar
-6. **Crear host nuevo**
+5. **Crear host nuevo**
 	- Entramos en nuestra zona creada
 	- Hacemos click derecho > Host nuevo (A o AAAA)
 	- Colocamos un nombre
 	- Colocamos la dirección IP
 	- Agregar Host
-8. **Guardar cambios y aplicar configuración**
+6. **Guardar cambios y aplicar configuración**
 	- Ahora guardamos los cambios y ya estaría habilitado
   </details>
     
@@ -210,11 +210,11 @@
 	- Ir a services > DHCP server
    	- Seleccionar la interfaz LAN
    	- Activar la casilla (Enable DHCP Server on LAN interface)
-5. **Configurar el rango de direcciones IP**
+4. **Configurar el rango de direcciones IP**
    	- Definir el rango > Mi ejemplo (10.0.0.11 - 10.0.0.243)
-7. **Guardar cambios y aplicar configuración**
+5. **Guardar cambios y aplicar configuración**
 	- Ahora guardamos los cambios y ya estaría habilitado
-8. **Extra**
+6. **Extra**
    	- Normalmente cuando configuras por primera vez Pfsense ya te pregunta si quieres DHCP o no y te lo hace automáticamente el
        
   </details>
@@ -231,7 +231,26 @@
 - **¿Qué es?:** Apache es un servidor web de código abierto que utiliza HTML.
 - **¿Por qué es necesario?:** Apache es necesario si quieres crear una web alojada por ti mismo. En lugar de utilizar servicios de hosting de pago, puedes alojar tus propias páginas web
 - **¿Dónde hay información oficial?:** Puedes encontrar información oficial en la página web de Apache, donde hay de todo tipo de información sobre el tema [APACHE](https://httpd.apache.org/)
-- **Proceso instalación:** 
+<details>
+    <summary>⚙️ Pasos para instalar APACHE en pfSense</summary>
+        <em>
+        
+</p>
+
+1. **Requisitos**
+	- Tener una Maquina Virtual Disponible
+2. **Actualizar los paquetes del sistema**  
+	- `sudo apt update && sudo apt upgrade -y`
+3. **Instalar Apache2**  
+	- `sudo apt install apache2 -y`
+4. **Verificar servicio**
+   	- `sudo systemctl status apache2`
+   	- ir a nuestro navegador web y poner http://(IP MAQUINA)
+5. **Guardar cambios y aplicar configuración**
+	- Ahora guardamos los cambios y ya estaría habilitado
+       
+  </details>
+  
 </details>
 
 <details>
