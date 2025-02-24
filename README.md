@@ -180,7 +180,13 @@
    	- Colocar nombre a nuestra zona
    	- Marcar casilla (Crear un archivo nuevo con este nombre de archivo)
    	- Finalizar
-7. **Guardar cambios y aplicar configuración**
+6. **Crear host nuevo**
+	- Entramos en nuestra zona creada
+	- Hacemos click derecho > Host nuevo (A o AAAA)
+	- Colocamos un nombre
+	- Colocamos la dirección IP
+	- Agregar Host
+8. **Guardar cambios y aplicar configuración**
 	- Ahora guardamos los cambios y ya estaría habilitado
   </details>
     
