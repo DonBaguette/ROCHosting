@@ -127,7 +127,7 @@
 
 <h1 align="center">
 	<align: left;">
-    <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Diagrama%20Red.png?raw=true
+    <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Networks.png?raw=true
   <p align="center">
 
   ## 📈Diagrama de Gantt (En proceso)
@@ -190,7 +190,8 @@
 	- Ahora guardamos los cambios y ya estaría habilitado
 <h1 align="center">
 <align: left;">
-<img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Dns.png?raw=true
+<img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Dns.png?raw=true
+
   <p align="center">
   </details>
     
@@ -222,7 +223,7 @@
    	- Normalmente cuando configuras por primera vez Pfsense ya te pregunta si quieres DHCP o no y te lo hace automáticamente el
 <h1 align="center">
 <align: left;">
-<img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Dhcp.png?raw=true
+<img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Dhcp.png?raw=true
   <p align="center">
        
   </details>
@@ -340,12 +341,12 @@
 	- Ahora guardamos los cambios y ya estaría funcionando el Pfsense
 <h1 align="center">
 <align: left;">
-<img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Rules.png?raw=true
+<img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Rules.png?raw=true
 <p align="center">
 	
 <h1 align="center">
 <align: left;">
-<img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Port%20Forward.png?raw=true
+<img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Port%20Forward.png?raw=true
 <p align="center">
        
   </details>
