@@ -76,7 +76,7 @@
 | --- | --- | --- | --- | --- | --- |
 | Host | Windows 11 | 3TB SSD | 16 Núcleos | 32GB | **DHCP** 192.168.1.10 |
 | pfsense | FreeBSD | 25GB SSD | 2 Núcleos | 2GB | **WAN** 192.168.1.100 / **LAN** 10.0.0.1  |
-| DNS | Windows Server | 10GB SSD | 2 Núcleos | 4GB | **DHCP** 10.0.0.21 |
+| DNS | Windows Server | 10GB SSD | 2 Núcleos | 4GB | **DHCP** 10.0.0.15 |
 | Docker / Web | Ubuntu Desktop | 100GB SSD | 4 Núcleos | 8GB | **STATIC** 10.0.0.11 |
 
   ## 📕Roles y Responsabilidades
