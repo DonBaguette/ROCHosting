@@ -138,29 +138,53 @@
         
 </p>
 
-1. **Requisitos**
-	- Windows Server instalado y funcionando
-2. **Acceder a Windows Server**  
-	- Iniciar sesión en Windows Server
-3. **Instalar el servicio DNS**  
-	- Ir a Administrar > Agregar roles y características
-   	- Seleccionar Servidor DNS
-   	- Instalar y esperar
-4. **Configurar el DNS**
-   	- Ir a Herramientas > DNS
-   	- Hacer click derecho > Agregar Zona nueva
-   	- Seleccionar Zona nueva
-   	- Colocar nombre a nuestra zona
-   	- Marcar casilla (Crear un archivo nuevo con este nombre de archivo)
-   	- Finalizar
-5. **Crear host nuevo**
-	- Entramos en nuestra zona creada
-	- Hacemos click derecho > Host nuevo (A o AAAA)
-	- Colocamos un nombre
-	- Colocamos la dirección IP
-	- Agregar Host
-6. **Guardar cambios y aplicar configuración**
-	- Ahora guardamos los cambios y ya estaría habilitado
+# Configuración de Servidor DNS en Windows Server
+
+---
+
+## 1. Requisitos
+
+✅ Windows Server instalado y funcionando  
+✅ Acceso al servidor con sesión iniciada
+
+---
+
+## 2. Instalación del Servicio DNS
+
+1. Acceder a **Windows Server** e iniciar sesión.
+2. Ir a **Administrar > Agregar roles y características**.
+3. Seleccionar **Servidor DNS**.
+4. Iniciar la instalación y esperar a que finalice.
+
+---
+
+## 3. Configuración Inicial del DNS
+
+1. Ir a **Herramientas > DNS**.
+2. Hacer clic derecho en el servidor y seleccionar **Agregar Zona nueva**.
+3. Seleccionar **Zona nueva**.
+4. Asignar un nombre a la zona.
+5. Marcar la casilla: **Crear un archivo nuevo con este nombre de archivo**.
+6. Finalizar la configuración de la zona.
+
+---
+
+## 4. Creación de un Host Nuevo (A o AAAA)
+
+1. Dentro de la zona creada, hacer clic derecho y seleccionar **Host nuevo (A o AAAA)**.
+2. Asignar un nombre al host.
+3. Introducir la dirección IP correspondiente.
+4. Hacer clic en **Agregar Host**.
+5. Guardar y aplicar los cambios.
+
+---
+
+## 5. Aplicar Configuración Final
+
+🔒 Guardar todos los cambios.  
+✅ El servicio DNS quedará habilitado y funcionando.
+
+---
 <h1 align="center">
 <align: left;">
 <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Dns.png?raw=true
@@ -179,21 +203,52 @@
         
 </p>
 
-1. **Requisitos**
-	- Pfsense instalado y funcionando en una máquina virtual
-	- Acceso a la interfaz web de pfSense
-2. **Acceder a Pfsense**  
-	- Iniciar sesión en la interfaz web de pfSense
-3. **Habilitar el servicio DHCP**  
-	- Ir a services > DHCP server
-   	- Seleccionar la interfaz LAN
-   	- Activar la casilla (Enable DHCP Server on LAN interface)
-4. **Configurar el rango de direcciones IP**
-   	- Definir el rango > Mi ejemplo (10.0.0.11 - 10.0.0.243)
-5. **Guardar cambios y aplicar configuración**
-	- Ahora guardamos los cambios y ya estaría habilitado
-6. **Extra**
-   	- Normalmente cuando configuras por primera vez Pfsense ya te pregunta si quieres DHCP o no y te lo hace automáticamente el
+# Configuración de Servicio DHCP en pfSense
+
+---
+
+## 1. Requisitos
+
+✅ pfSense instalado y funcionando en una máquina virtual  
+✅ Acceso a la interfaz web de pfSense  
+
+---
+
+## 2. Acceder a pfSense
+
+1. Abrir la interfaz web de pfSense.
+2. Iniciar sesión con las credenciales de administrador.
+
+---
+
+## 3. Habilitar el Servicio DHCP
+
+1. Ir a **Services > DHCP Server**.
+2. Seleccionar la interfaz **LAN**.
+3. Activar la casilla:  
+   ✅ **Enable DHCP Server on LAN interface**.
+
+---
+
+## 4. Configurar el Rango de Direcciones IP
+
+- Definir el rango de direcciones IP.  
+  **Ejemplo:** 10.0.0.11 - 10.0.0.243
+
+---
+
+## 5. Aplicar Configuración Final
+
+🔒 Guardar todos los cambios.  
+✅ El servicio DHCP quedará habilitado.
+
+---
+
+## 6. Nota Extra
+
+📌 Normalmente, en la configuración inicial de pfSense, el asistente te pregunta si deseas habilitar DHCP. Si lo activas ahí, este proceso se realiza automáticamente.
+
+---
 <h1 align="center">
 <align: left;">
 <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Dhcp.png?raw=true
@@ -219,17 +274,47 @@
         
 </p>
 
-1. **Requisitos**
-	- Tener una Maquina Virtual Disponible
-2. **Actualizar los paquetes del sistema**  
-	- `sudo apt update && sudo apt upgrade -y`
-3. **Instalar Apache2**  
-	- `sudo apt install apache2 -y`
-4. **Verificar servicio**
-   	- `sudo systemctl status apache2`
-   	- ir a nuestro navegador web y poner http://(IP MAQUINA)
-5. **Guardar cambios y aplicar configuración**
-	- Ahora guardamos los cambios y ya estaría habilitado
+# Instalación y configuración de Servicio Apache2
+
+---
+
+# 1. **Requisitos**
+✅ Tener una Maquina Virtual Disponible
+
+---
+
+# 2. **Actualizar los paquetes del sistema**  
+	- sudo apt update && sudo apt upgrade -y
+
+---
+
+# 3. **Instalar Apache2**  
+	- sudo apt install apache2 -y
+
+---
+
+# 4. **Verificar servicio**
+   	- sudo systemctl status apache2
+   - Ir a nuestro navegador web y poner http://(IP MAQUINA)
+
+---
+
+# 5. **Guardar cambios y aplicar configuración**
+   - Ahora guardamos los cambios y ya estaría habilitado
+
+---
+
+# 6. **Modificar archivo html**
+   - Ahora lo que podemos hacer es modificar nuestra pagina web y hacerla como queramos, para ello vamos a ir a nuestros explorador de archivos y vamos a ir a la siguiente ruta
+       - /var/www/html
+
+---
+
+# 7. **Pagina web modificada**
+<h1 align="center">
+<align: left;">
+<img width="82%" src=
+  <p align="center">
        
   </details>
   
@@ -267,51 +352,92 @@
         
 </p>
 
-1. **Requisitos**
-	- Tener una Maquina Virtual Disponible
-	- Mínimo 2 interfaces de red
-	- Imagen ISO de Pfsense
-2. **Instalación de Pfsense**  
-	- Crear una nueva máquina virtual
-	- 1ª Interfaz en modo NAT
-	- 2ª Interfaz en modo red interna
-3. **Proceso instalación**  
-	- Cuando inicia la instalación seleccionar Boot Multi User y presionar Enter
-	- Aceptar la pantalla de bienvenida
-	- Selecciona "Install pfsense" y elegir el idioma
-	- Escoger el tipo de disco (Recomendado Auto UFS)
-	- Esperar a que termine la instalación y seleccionar Reboot
-	- **IMPORTANTE** Retirar la ISO antes de reiniciar
-4. **Configuración Inicial**
-   	- Asignar interfaces
-   	- WAN > Internet
-   	- LAN > Red Interna
-5. **Port Forwarding**
-	- Ir a Firewall > NAT
-	- Seleccionar pestaña Port Forward
-	- Hacer click en ADD
-	- Configurar los siguientes campos
-		- Interface: WAN
-		- Protocol: TCP/UDP
-		- Destination Port Range:
-			- From: HTTP (80)
-			- To: El mismo puerto o uno diferente
-     		- Redirect Target IP
-        		- 10.0.0.11
-        	- Redirect Target Port:
-           		- Puerto HTTP (80)
-	- Guardar y aplicar cambios
-6. **Reglas Firewall**
-   	- Ir a Firewall > Rules > WAN
-   	- Agregar nueva regla
-   		- Action: Pass
-   	   	- Protocol: TCP o UDP
-   	   	- Source: Any
-   	   	- Destination: WAN Address y el puerto
-   	   	- Description: Lo que quieras
-	- Guardar y aplicar cambios
-5. **Guardar cambios y aplicar configuración**
-	- Ahora guardamos los cambios y ya estaría funcionando el Pfsense
+# Instalación y Configuración Básica de pfSense
+
+---
+
+## 1. Requisitos
+
+✅ Máquina Virtual disponible  
+✅ Al menos 2 interfaces de red  
+✅ Imagen ISO de pfSense
+
+---
+
+## 2. Creación de la Máquina Virtual
+
+- Crear una nueva máquina virtual
+- Configurar:
+    - **Primera interfaz**: Modo NAT
+    - **Segunda interfaz**: Red interna
+
+---
+
+## 3. Instalación de pfSense
+
+1. Iniciar la máquina virtual con la ISO de pfSense.
+2. Seleccionar **Boot Multi User** y presionar **Enter**.
+3. Aceptar la pantalla de bienvenida.
+4. Seleccionar **Install pfSense**.
+5. Elegir el idioma.
+6. Seleccionar el tipo de disco (recomendado: **Auto UFS**).
+7. Esperar a que termine y seleccionar **Reboot**.
+8. ⚠️ **IMPORTANTE**: Retirar la ISO antes de reiniciar.
+
+---
+
+## 4. Configuración Inicial de Interfaces
+
+- Asignar interfaces:
+    - **WAN** → Conexión a Internet (NAT)
+    - **LAN** → Red Interna
+
+---
+
+## 5. Configuración de Port Forwarding
+
+1. Ir a **Firewall > NAT**.
+2. Seleccionar la pestaña **Port Forward**.
+3. Hacer clic en **ADD**.
+4. Configurar los siguientes campos:
+
+    | Campo                    | Valor                     |
+    |---------------------|-------------------|
+    | Interface                | WAN                       |
+    | Protocol                  | TCP/UDP                |
+    | Destination Port Range | **From:** HTTP (80) <br> **To:** (80 o el puerto que quieras) |
+    | Redirect Target IP     | 10.0.0.11             |
+    | Redirect Target Port  | HTTP (80)           |
+
+5. Guardar y aplicar cambios.
+
+---
+
+## 6. Creación de Reglas de Firewall
+
+1. Ir a **Firewall > Rules > WAN**.
+2. Agregar una nueva regla.
+3. Configurar:
+
+    | Campo              | Valor              |
+    |------------------|----------------|
+    | Action                | Pass                |
+    | Protocol              | TCP o UDP    |
+    | Source                | Any                 |
+    | Destination        | WAN Address y puerto |
+    | Description        | (Lo que quieras)  |
+
+4. Guardar y aplicar cambios.
+
+---
+
+## 7. Aplicar Configuración Final
+
+🔒 Guardar todos los cambios para que pfSense quede funcionando correctamente.
+
+---
+
+
 <h1 align="center">
 <align: left;">
 <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Rules.png?raw=true
