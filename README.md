@@ -70,42 +70,16 @@
     <em>
  </p>
 
-**Máquina Host**
-  - **Hardware**
-    - **Procesador:** 16 Núcleos
-    - **Memoria RAM:** 32GB
-    - **Almacenamiento:** 3TB 
-  - **Software**
-    - **Sistema Operativo:** Windows 11
+| MÁQUINA | SO | ALMACENAMIENTO | CPU | RAM | IP |
+| --- | --- | --- | --- | --- | --- |
+| Host | Windows 11 | 3TB SSD | 16 Núcleos | 32GB | DHCP 192.168.1.10 |
+| pfsense | FreeBSD | 25GB SSD | 2 Núcleos | 2GB | WAN 192.168.1.100 / LAN 10.0.0.1  |
+| DNS | Windows Server | 10GB SSD | 2 Núcleos | 4GB | DHCP 10.0.0.21 |
+| Docker / Web | Ubuntu Desktop | 100GB SSD | 4 Núcleos | 8GB | STATIC 10.0.0.11 |
 
-**Máquina para pfSense (FireWall y DHCP)**
-  - **Hardware**
-    - **Procesador:** 2 Núcleo 
-    - **Memoria RAM:** 2GB
-    - **Almacenamiento:** 25GB
-    - **Conexion internet:** Interfaz1 Wan (Red NAT) / Interfaz2 Lan (Red Interna)
-  - **Software**
-    - **Sistema Operativo:** Pfsense
+> [!NOTE]
+> Useful information that users should know, even when skimming content
 
-**Máquina para DNS**
-  - **Hardware**
-    - **Procesador:** 2 Núcleo 
-    - **Memoria RAM:** 4GB
-    - **Almacenamiento:** 10GB
-    - **Conexion internet:** Conexión Red Interna
-  - **Software**
-    - **Sistema Operativo:** Windows Server
-
-**Máquina para Contenedores Docker y Web**
-  - **Hardware**
-    - **Procesador:** 4 Núcleos 
-    - **Memoria RAM:** 8GB / 16GB
-    - **Almacenamiento:** 100GB
-    - **Conexion internet:** Conexión Red Interna
-  - **Software**
-    - **Sistema Operativo:** Ubuntu Desktop
-
-  
   ## 📕Roles y Responsabilidades
 
 <p align="center">
