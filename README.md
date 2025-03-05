@@ -77,7 +77,7 @@
 | DNS | Windows Server | 10GB SSD | 2 Núcleos | 4GB | DHCP 10.0.0.21 |
 | Docker / Web | Ubuntu Desktop | 100GB SSD | 4 Núcleos | 8GB | STATIC 10.0.0.11 |
 
-> [!NOTE]
+> [!Note]
 > Useful information that users should know, even when skimming content
 
   ## 📕Roles y Responsabilidades
