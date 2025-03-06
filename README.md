@@ -462,8 +462,8 @@
         
 </p>
 
-- **¿Qué es?:** El Port forward es una técnica que sirve para permitir el tráfico externo que llegue a un dispositivo específico dentro de una red local. Normalmente se utiliza en redes empresariales cuando se necesita acceder a servicios como servidores web, cámaras...
-- **¿Por qué es necesario?:** Es necesario para permitir el acceso remoto a servidores dentro de una red privada, publicar servicios internos (servidores web, servidores de juegos...) hacia internet y facilitar la administración remota
+- **¿Qué es?:** El port forwarding es una técnica que sirve para permitir el tráfico externo que llegue a un dispositivo específico dentro de una red local. Normalmente se utiliza en redes empresariales cuando se necesita acceder a servicios como servidores web, cámaras, etc
+- **¿Por qué es necesario?:** Es necesario para permitir el acceso remoto a servidores dentro de una red privada, publicar servicios internos (servidores web, servidores de juegos, etc.) hacia Internet y facilitar la administración remota
 - **¿Cuáles son las principales características de Port Forward?:**
 	- Redirección de puertos específicos a dispositivos internos
    	- Permite mantener la seguridad controlando qué puertos se exponen
@@ -493,7 +493,7 @@
 ## 2. Acceder a la Interfaz Web
 
 1. Primero vamos a ir a otra máquina que tengamos en la red interna    
-2. Para poder saber cual es nuestra IP es tan fácil como ir al FireWall y la IP es la de la red LAN  
+2. Para poder saber cuál es nuestra IP es tan fácil como ir al FireWall y la IP es la de la red LAN  
 
 <p align="left">
 <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Pfsense.png?raw=true />
@@ -501,7 +501,7 @@
 
 3. Ahora para acceder a la interfaz Web del FireWall nos vamos a nuestro navegador y ponemos la IP LAN del FireWall, en mi caso la 10.0.0.1  
 4. Nos va a pedir un usuario y contraseña, la default es **USUARIO** `Admin` **CONTRASEÑA** `pfsense`
-5. Ahora ya estamos dentro y nos deberia de aparecer un menu como este
+5. Ahora ya estamos dentro y nos debería de aparecer un menú como este:
 <p align="left">
 <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Entrada.png?raw=true />
 </p>
@@ -524,7 +524,7 @@
 | Redirect target port | HTTP (80)	  |
 | Description	     | Regla NAT en WAN	|
 
-3. Ahora al guardar los cambios deberiamos ver algo como esto
+3. Ahora al guardar los cambios deberíamos ver algo como esto
 <p align="left">
 <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Natport.png?raw=true />
 </p>
@@ -545,7 +545,7 @@
 | Destination	     | Address or Alias - 10.0.0.11 |
 | Destination Port Range | From HTTP (80) to HTTP (80) |
 | Description	     | NAT Permitir trafico WAN -> LAN |
-3. Ahora al guardar los cambios y deberiamos ver algo como esto
+3. Ahora al guardar los cambios y deberíamos ver algo como esto
 <p align="left">
 <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Wanport.png?raw=true />
 </p>
@@ -555,8 +555,8 @@
 ## 5. Comprobación
 
 1. Ahora, cuando ya hemos realizado los pasos anteriores vamos a mirar si podemos ver nuestro sitio web a través del FireWall.
-2. La IP que tenemos que poner en el navegador de la Maquina Host para poder acceder a al web es la WAN del Pfsense en este caso la mia es (192.168.1.100)
-3. Como se puede ver, aqui tenemos la pagina web hosteada en una maquina dentro de la red interna
+2. La IP que tenemos que poner en el navegador de la máquina host para poder acceder a al web es la WAN del Pfsense en este caso la mía es (192.168.1.100)
+3. Como se puede ver, aqui tenemos la página web hosteada en una máquina dentro de la red interna
 <p align="left">
 <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Portweb.png?raw=true />
 </p>
@@ -579,7 +579,7 @@
 
 ## 2. Activación SSH
 
-1. En esta ocasión vamos a activar el acceso al servicio SSH y asi poder conectarme desde una maquina fuera de la red a una que este dentro de la red interna (WAN > LAN)
+1. En esta ocasión vamos a activar el acceso al servicio SSH y así poder conectarme desde una maquina fuera de la red a una que este dentro de la red interna (WAN > LAN)
 2. Vamos a ir al FireWall y vamos a crear una regla en **FireWall > NAT > Port Forward** y añadir nueva regla
 3. Las opciones que vamos a tener en cuenta van a ser las siguientes:
    
@@ -594,7 +594,7 @@
 | Redirect target port | SSH (22)	  |
 | Description	     | Regla NAT en WAN para SSH en DMZ	|
 
-4. Ahora al guardar los cambios y deberiamos ver algo como esto
+4. Ahora al guardar los cambios y deberíamos ver algo como esto
 <p align="left">
 <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Sshnat.png?raw=true />
 </p>
@@ -603,7 +603,7 @@
 
 ## 3. Instalar OpenSSH
 
-1. Para poder utilizar el SSH tenemos que instalarlo en la maquina donde nos queremos conectar, en este caso un Ubuntu Desktop, normalmente los windows ya lo traen instalado por defecto.
+1. Para poder utilizar el SSH tenemos que instalarlo en la máquina donde nos queremos conectar, en este caso un Ubuntu Desktop, normalmente los windows ya lo traen instalado por defecto.
 2. Para instalarlo en Ubuntu tenemos que ir a la consola y poner el siguiente comando:
 `sudo apt install openssh-server`
 3. Ahora que lo tenemos instalado, vamos a desactivar el FireWall, para que nos permite la conexión, para ello vamos a utilizar el siguiente comando:
@@ -614,9 +614,9 @@
 
 ## 4. Comprobación
 
-1. Ahora para comprobar que funciona vamos a ir a nuestra maquina host (WAN) y en la consola vamos a poner lo siguiente:
-   Este es mi ejemplo `ssh -p 22 docker@192.168.1.100` en vuestro caso tendreis que poner el nombre de la maquina donde hemos instalado el SSH y luego la IP WAN del FireWall
-2. Si todo esta bien hecho deberiais poder conectaros
+1. Ahora para comprobar que funciona vamos a ir a nuestra máquina host (WAN) y en la consola vamos a poner lo siguiente:
+   Este es mi ejemplo `ssh -p 22 docker@192.168.1.100` en vuestro caso tendréis que poner el nombre de la máquina donde hemos instalado el SSH y luego la IP WAN del FireWall
+2. Si todo está bien hecho deberíais poder conectaros
 <p align="left">
 <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Sshconsola.png?raw=true />
 </p>
