@@ -621,5 +621,52 @@
 <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Sshconsola.png?raw=true />
 </p>
 
-   
+</details>
+</details>	
 
+<details>
+  <summary>📂OPENVPN </summary>
+    <em>
+        
+</p>
+
+# OpenVPN
+
+---
+
+## 1. ¿Qué es una VPN y qué ventajas ofrece?
+
+- Una VPN es una tecnología que crea una conexión segura y cifrada entre dos o más dispositivos a través de una red pública, como internet. Esta conexión lo que hace es simular que los dispositivos están en una misma red local, proporcionando privacidad y seguridad
+- Las ventajas que ofrece són las siguientes:
+  	- Seguridad: Cifra la conexión entre el dispositivo y el servidor VPN
+  	- Privacidad: Oculta la IP real del usuario
+  	- Acceso remoto: Permite acceder a redes privadas desde cualquier lugar
+  	- Protección en redes públicas: Previene ataques en redes Wi-Fi públicas al cifrar la conexión
+
+---
+
+## 2. ¿Qué tipos de VPN hay? Muestra un esquema de cada caso
+
+1. **VPN de acceso remoto**
+- Se trata de VPNs que te permite conectar a un usuario a una red remota de forma segura
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/VpnAR.png?raw=true />
+</p>
+
+2. **VPN de sitio a sitio**
+- Este es un tipo de VPN que conecta dos redes enteras entre sí. De esta manera, incluso si las redes están en distintas zonas geográficas, podrán estar interconectadas y funcionar como una sola.
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/VpnSS.png?raw=true />
+</p>
+
+3. **VPN basadas en cliente**
+- Estas VPN se basan en una aplicación que te instalas en el dispositivo donde quieras usarla, y desde él te conectas al servicio que tengas contratado. Son las más comunes y fáciles de utilizar.
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/VpnBC.png?raw=true />
+</p>
+
+4. **VPN basadas en servidor**
+- Es un tipo bastante más complejo, aunque con más flexibilidad y la VPN se instala directamente en un servidor al que te conectas.
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/VpnBS.png?raw=true />
+</p>
