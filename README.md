@@ -457,7 +457,7 @@
   </details>
 
   <details>
-  <summary>📂PORTFORWARD</summary>
+  <summary>📂PORTFORWARD / SSH</summary>
     <em>
         
 </p>
@@ -471,12 +471,12 @@
    	- Muy utilizado en servidores de videojuegos y servidores web
      
 <details> 
-<summary>⚙️ Pasos para el configurar Port Forward</summary>
+<summary>⚙️ Pasos para el configurar Port Forward y SSH</summary>
         <em>
         
 </p>
 
-# Configuración Port Forward
+# Configuración Port Forward 
 
 ---
 
@@ -545,6 +545,10 @@
 | Destination	     | Address or Alias - 10.0.0.11 |
 | Destination Port Range | From HTTP (80) to HTTP (80) |
 | Description	     | NAT Permitir trafico WAN -> LAN |
+3. Ahora al guardar los cambios y deberiamos ver algo como esto
+<p align="left">
+<img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Wanport.png?raw=true />
+</p>
 
 ---
 
@@ -557,4 +561,65 @@
 <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Portweb.png?raw=true />
 </p>
 
+---
+
+# Acceso al servicio SSH
+
+---
+
+## 1. Requisitos
+
+✅ Tener Pfsense instalado
+
+✅ Tener acceso a la Interfaz Web 
+
+✅ Tener otra máquina en la misma red
+
+---
+
+## 2. Activación SSH
+
+1. En esta ocasión vamos a activar el acceso al servicio SSH y asi poder conectarme desde una maquina fuera de la red a una que este dentro de la red interna (WAN > LAN)
+2. Vamos a ir al FireWall y vamos a crear una regla en **FireWall > NAT > Port Forward** y añadir nueva regla
+3. Las opciones que vamos a tener en cuenta van a ser las siguientes:
+   
+| Campo              | Valor              |
+|--------------------|--------------------|
+| Interfaz	     | WAN		  |
+| Address family     | IPv4		  |
+| Protocol	     | TCP		  |
+| Destination	     | Wan Address 	  |
+| Destination Port   | SSH (22)	  	  |
+| Redirect target IP | Address or Alias - 10.0.0.11 |
+| Redirect target port | SSH (22)	  |
+| Description	     | Regla NAT en WAN para SSH en DMZ	|
+
+4. Ahora al guardar los cambios y deberiamos ver algo como esto
+<p align="left">
+<img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Sshnat.png?raw=true />
+</p>
+
+---
+
+## 3. Instalar OpenSSH
+
+1. Para poder utilizar el SSH tenemos que instalarlo en la maquina donde nos queremos conectar, en este caso un Ubuntu Desktop, normalmente los windows ya lo traen instalado por defecto.
+2. Para instalarlo en Ubuntu tenemos que ir a la consola y poner el siguiente comando:
+`sudo apt install openssh-server`
+3. Ahora que lo tenemos instalado, vamos a desactivar el FireWall, para que nos permite la conexión, para ello vamos a utilizar el siguiente comando:
+`sudo ufw disable`
+4. Ahora ya tenemos todo preparado
+
+---
+
+## 4. Comprobación
+
+1. Ahora para comprobar que funciona vamos a ir a nuestra maquina host (WAN) y en la consola vamos a poner lo siguiente:
+   Este es mi ejemplo `ssh -p 22 docker@192.168.1.100` en vuestro caso tendreis que poner el nombre de la maquina donde hemos instalado el SSH y luego la IP WAN del FireWall
+2. Si todo esta bien hecho deberiais poder conectaros
+<p align="left">
+<img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Sshconsola.png?raw=true />
+</p>
+
+   
 
