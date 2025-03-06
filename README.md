@@ -145,6 +145,7 @@
 ## 1. Requisitos
 
 ✅ Windows Server instalado y funcionando  
+
 ✅ Acceso al servidor con sesión iniciada
 
 ---
@@ -210,6 +211,7 @@
 ## 1. Requisitos
 
 ✅ pfSense instalado y funcionando en una máquina virtual  
+
 ✅ Acceso a la interfaz web de pfSense  
 
 ---
@@ -359,7 +361,9 @@
 ## 1. Requisitos
 
 ✅ Máquina Virtual disponible  
+
 ✅ Al menos 2 interfaces de red  
+
 ✅ Imagen ISO de pfSense
 
 ---
@@ -450,12 +454,107 @@
        
   </details>
 
-
-
-
-
-
   </details>
 
+  <details>
+  <summary>📂PORTFORWARD</summary>
+    <em>
+        
+</p>
+
+- **¿Qué es?:** El Port forward es una técnica que sirve para permitir el tráfico externo que llegue a un dispositivo específico dentro de una red local. Normalmente se utiliza en redes empresariales cuando se necesita acceder a servicios como servidores web, cámaras...
+- **¿Por qué es necesario?:** Es necesario para permitir el acceso remoto a servidores dentro de una red privada, publicar servicios internos (servidores web, servidores de juegos...) hacia internet y facilitar la administración remota
+- **¿Cuáles son las principales características de Port Forward?:**
+	- Redirección de puertos específicos a dispositivos internos
+   	- Permite mantener la seguridad controlando qué puertos se exponen
+   	- Permite el acceso remoto a servicios internos desde cualquier parte del mundo
+   	- Muy utilizado en servidores de videojuegos y servidores web
+     
+<details> 
+<summary>⚙️ Pasos para el configurar Port Forward</summary>
+        <em>
+        
+</p>
+
+# Configuración Port Forward
+
+---
+
+## 1. Requisitos
+
+✅ Tener Pfsense instalado
+
+✅ Tener acceso a la Interfaz Web 
+
+✅ Tener otra máquina en la misma red
+
+---
+
+## 2. Acceder a la Interfaz Web
+
+1. Primero vamos a ir a otra máquina que tengamos en la red interna    
+2. Para poder saber cual es nuestra IP es tan fácil como ir al FireWall y la IP es la de la red LAN  
+
+<p align="left">
+<img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Pfsense.png?raw=true />
+</p>
+
+3. Ahora para acceder a la interfaz Web del FireWall nos vamos a nuestro navegador y ponemos la IP LAN del FireWall, en mi caso la 10.0.0.1  
+4. Nos va a pedir un usuario y contraseña, la default es **USUARIO** `Admin` **CONTRASEÑA** `pfsense`
+5. Ahora ya estamos dentro y nos deberia de aparecer un menu como este
+<p align="left">
+<img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Entrada.png?raw=true />
+</p>
+
+---
+
+## 3. Crear regla de entrada
+
+1. Para crear la regla de entrada vamos a ir a **FireWall > NAT > Port Forward** y añadir nueva regla
+2. Las opciones que vamos a tener en cuenta van a ser las siguientes:
+
+| Campo              | Valor              |
+|--------------------|--------------------|
+| Interfaz	     | WAN		  |
+| Address family     | IPv4		  |
+| Protocol	     | TCP		  |
+| Destination	     | Wan Address 	  |
+| Destination Port   | HTTP (80)	  |
+| Redirect target IP | Address or Alias - 10.0.0.11 |
+| Redirect target port | HTTP (80)	  |
+| Description	     | Regla NAT en WAN	|
+
+3. Ahora al guardar los cambios deberiamos ver algo como esto
+<p align="left">
+<img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Natport.png?raw=true />
+</p>
+
+---
+
+## 4. Crear Regla WAN
+
+1. Para crear una regla en WAN vamos a ir a **FireWall > Rules > WAN** y añadir nueva regla
+2. Las opciones que vamos a tener en cuenta van a ser las siguientes:
+
+| Campo              | Valor              |
+|--------------------|--------------------|
+| Interfaz	     | WAN		  |
+| Address family     | IPv4		  |
+| Protocol	     | TCP		  |
+| Source 	     | Any		  |
+| Destination	     | Address or Alias - 10.0.0.11 |
+| Destination Port Range | From HTTP (80) to HTTP (80) |
+| Description	     | NAT Permitir trafico WAN -> LAN |
+
+---
+
+## 5. Comprobación
+
+1. Ahora, cuando ya hemos realizado los pasos anteriores vamos a mirar si podemos ver nuestro sitio web a través del FireWall.
+2. La IP que tenemos que poner en el navegador de la Maquina Host para poder acceder a al web es la WAN del Pfsense en este caso la mia es (192.168.1.100)
+3. Como se puede ver, aqui tenemos la pagina web hosteada en una maquina dentro de la red interna
+<p align="left">
+<img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Portweb.png?raw=true />
+</p>
 
 
