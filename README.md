@@ -670,3 +670,245 @@
 <p align="left">
 <img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/VpnBS.png?raw=true />
 </p>
+
+---
+
+## 3. ¿Qué protocolos de VPN hay? Busca un esquema del funcionamiento
+
+1. **OpenVPN**
+- Fue desarrollado por OpenVPN project
+- Es uno de los protocolos que hay más seguros y fiables, además utiliza el cifrado SSL/TLS y puede funcionar en puertos diferentes, el cuál lo hace difícil de bloquear
+
+2. **PPTP**
+- Fue desarrollado por Microsoft
+- Es uno de los protocolos más antiguos y menos seguros actualmente, su punto fuerte es la velocidad pero es muy vulnerable.
+
+3. **L2TP**
+- Fue desarrollado por Microsoft y Cisco
+- Ofrece un buen equilibro entre la velocidad y seguridad
+
+4. **IPsec**
+- Fue desarrollado por Microsoft y Cisco y está principalmente pensado para móviles
+- Proporciona cifrado a nivel de red, además es uno de los protocolos más rápidos que hay de momento
+
+5. **WireGuard**
+- Fue desarrollado por Jason A. Donenfeld
+- Ofrece una gran velocidad y rendimiento, además ofrece un alto nivel de seguridad
+
+6. **SSTP**
+- Fue desarrollado por Microsoft 
+- Ofrece una gran seguridad y es difícil de bloquear
+
+| **Características**   | **OpenVPN**           | **PPTP**             | **L2TP**             | **IPsec**            | **WireGuard**        | **SSTP**             |
+|----------------------|-----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
+| **Cifrado**          | AES-256, SSL/TLS      | Ninguno o débil      | AES (con IPsec)      | AES-256              | ChaCha20             | AES-256 (SSL/TLS)    |
+| **Fiabilidad**       | Alta                  | Baja                 | Media                | Alta                 | Alta                 | Alta                 |
+| **Velocidad**        | Media                 | Alta                 | Media                | Media                | Alta                 | Media                |
+| **Compatibilidad**   | (Windows, Linux, macOS, iOS, Android) | (principalmente Windows) | (Windows, Linux, macOS, iOS, Android) | (a través de L2TP o IKEv2) | (Windows, Linux, macOS, iOS) | (principalmente Windows) |
+| **Seguridad**        | Alta (SSL/TLS) | Baja (vulnerable)    | Media (con IPsec)    | Alta (dependiendo de la implementación) | Alta (diseño moderno y seguro) | Alta (SSL/TLS seguro) |
+
+---
+
+## 4. ¿Qué es pfSense y cómo se relaciona con OpenVPN?
+
+1.
+- PfSense es un sistema operativo basado en FreeBSD diseñado para funcionar como un firewall. Se utiliza principalmente para poder administrar y proteger redes de los ataques. Ofrece varias configuraciones como VPN, control del tráfico, filtrado de contenido...
+
+2.
+- La respuesta rápida de porque se relacionan Pfsense y OpenVPN es por que pfSense es una plataforma muy completa para gestionar redes y seguridad, y se integra muy bien con OpenVPN, ofreciendo una solución potente para configurar redes privadas virtuales seguras.
+- La respuesta larga es por que Pfsense y OpenVPN se relacionan de la siguiente forma, pfsense actua como servidor OpenVPN, el cuál permite que clientes remotos se puedan conectar a una red privada de forma segura a través de internet. Esto es útil si necesitas acceder a la red interna de alguna empresa de forma segura.
+
+---
+
+## 5. ¿Qué función realiza OpenVPN en pfSense?
+- OpenVPN en pfsense permite la creación de túneles VPN seguros para poder conectarse a redes remotas o proporcionar acceso remoto a usuarios, esto garantiza la seguridad mediante un cifrado y autenticación. En Pfsense en su interfaz web tienes para configurar el OpenVPN.
+
+---
+
+## 6. ¿Cómo funciona el túnel VPN?
+- Un túnel funciona de la siguiente manera:
+
+1. **Establecer conexión**
+- El cliente y el servidor VPN inician una conexión a través de una red pública
+- El cliente luego se conecta al servidor VPN, esta conexión se inicia por un protocolo VPN, como OpenVPN
+- Durante este proceso, entre ellos negocian los parámetros de la conexión para asegurar que los dos lados del túnel se puedan comunicar de manera segura
+
+2. **Cifrado de datos**
+- Cuando la conexión entre los dos ya está establecida el servidor y el cliente crean un túnel seguro. Este túnel actúa como una caja cerrada, la cuál solo permite el paso a los datos cifrados
+- Importante saber que todos los datos que van a pasar por el túnel van a estar cifrados, para así evitar que cualquier persona pueda leer o modificar esta información
+
+3. **Envío de los datos**
+- Cuando los datos (como una solicitud de acceso a una página web o la descarga de un archivo) se envían desde el dispositivo del cliente, estos se encapsulan dentro de paquetes seguros
+- Importante saber que es la encapsulación, la encapsulación es como un segundo paquete el cuál contiene la información necesaria para que el paquete de dentro llegue al servidor VPN
+- Todos estos paquetes encapsulados son enviados a través del túnel VPN
+
+4. **Desencapsulación y Descifrado del servidor**
+- Los paquetes al llegar al servidor VPN, los paquetes encapsulados se desencapsulan y el contenido cifrado se descifra, entonces el servidor ya puede procesar esta información
+- Luego el servidor envía los datos de vuelta al cliente de la misma forma, encapsulándolos.
+
+---
+
+## 7. Haz una comparativa entre las VPN de pago y gratis en cuanto a seguridad, velocidad,
+fiabilidad, servicios, etc.
+
+### Comparativa entre **VPN de Pago** y **VPN Gratuitas**
+
+| **Aspecto**                     | **VPN de Pago**                                          | **VPN Gratuita**                                       |
+|----------------------------------|---------------------------------------------------------|--------------------------------------------------------|
+| **Seguridad**                    | Son más seguras, usan cifrado fuerte (como AES-256) y protocolos de calidad como OpenVPN o WireGuard. Además, la mayoría no guardan tus datos. | No son tan seguras. Algunas recopilan tus datos y usan protocolos débiles como PPTP. |
+| **Velocidad**                     | Son más rápidas. Tienen servidores dedicados y puedes elegir el que esté más cerca de ti. | Son más lentas. Muchos usuarios usan los mismos servidores gratuitos, así que están más congestionadas. |
+| **Fiabilidad**                    | Muy fiables. Tienen soporte técnico y servidores que funcionan bien todo el tiempo. | No siempre funcionan bien. A veces se caen o las conexiones son inestables. |
+| **Compatibilidad**                | Se pueden usar en varios dispositivos (PC, móvil, tablets, etc.) y en sistemas como Windows, macOS, Android, etc. | Generalmente solo funcionan en PC o móviles y algunos no permiten usarlas en varios dispositivos al mismo tiempo. |
+| **Política de No Registros**     | La mayoría no guardan tus datos. Esto significa que no pueden dárselos a nadie, ni a las autoridades. | Muchas VPN gratuitas guardan registros de lo que haces en Internet, lo que puede comprometer tu privacidad. |
+| **Soporte Técnico**               | El soporte suele ser bueno y rápido. Tienes chat en vivo y correos electrónicos. | Muchas no tienen soporte o si lo tienen, es muy limitado (solo por correo o foros). |
+| **Servicios Adicionales**         | Ofrecen extras como bloqueo de anuncios, protección contra malware, y acceso a contenido bloqueado de otras regiones. | No tienen extras. En muchos casos, te bombardean con anuncios o limitan el acceso a contenido. |
+| **Ubicación de los Servidores**   | Tienen servidores en muchos países, lo que te deja elegir la región que quieras para navegar. | Solo tienen servidores en pocos lugares, lo que limita tus opciones para cambiar de región. |
+
+---
+
+<details> 
+<summary>⚙️ Pasos para configurar OpenVPN</summary>
+        <em>
+        
+</p>
+
+---
+
+# Configuración OpenVPN
+
+---
+
+## 1. Requisitos
+
+✅ Tener Pfsense instalado
+
+✅ Tener acceso a la Interfaz Web 
+
+✅ Tener otra máquina en la misma red
+
+---
+
+## 2. Instalación plugin OpenVPN Client
+
+1. Lo primero es descargar el paquete `openvpn-client-export` y para ello vamos a System > Package Manager > Available Packages y buscamos el paquete `openvpn-client-export` y pulsamos en Install
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Openplugin.png?raw=true />
+</p>
+
+---
+
+## 3. Creación certificados digitales en Pfsense
+
+- Una CA es, una entidad confiable responsable de emitir y revocar certificados digitales utilizados para transacciones y firmas electrónicas
+
+1. Abrimos la interfaz del pfSense y navegamos hasta **System > Certificate Manager** y hacemos clic en Agregar
+
+2. Creamos el certificado manteniendo casi todas las opciones por defecto y asignando un nombre
+
+| **Opción** | **Descripción** |
+|------------|-----------------|
+| Descriptive name | OpenVPN_CA |
+| Common name | OpenVPN_CA |
+
+3. Una vez realizado los cambios y guardando nos aparece nuestro certificado:
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/OpenCA.png?raw=true />
+</p>
+
+---
+
+## 4. Crear el certificado del servidor OpenVPN
+
+1. En el apartado siguiente, **System > Certificates > Certificates** clicamos en agregar un certificado:
+
+| **Opción** | **Descripción** |
+|------------|-----------------|
+| Method | Create an internal Certificates |
+| Descriptive name | OpenVPN_Certificates |
+| Common name | OpenVPN_Certificates |
+| Certificate type | Server certificate |
+
+- Aquí nos tiene que aparecer nuestra CA previamente creada
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/OpenCAp.png?raw=true/>
+</p>
+
+---
+
+# 5. Configurar el servidor OpenVPN
+
+1. Ahora vamos a configurar el servidor OpenVPN a donde se van a conectar los clientes para lo cual, nos vamos a **VPN > OpenVPN > Servers** y clicamos en Add y rellenamos las opciones:
+
+| **Opción** | **Descripción** |
+|------------|-----------------|
+| Description | OPENVPN_Server |
+| Server mode | Remote access (SSL/TLS + User Auth) |
+| Protocol | UDP on IPv4 only |
+| Interface | WAN |
+| Puerto | 5194 (Cambiamos el puerto por defecto |
+| Peer certificate authority | OpenVPN_CA (seleccionamos el nuestro) |
+| Server certificate | OPENVPN_Certificate (Server: Yes, CA: OPENVPN_CA) |
+
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/OpenCer.png?raw=true/>
+</p>
+
+2. Por último, debemos seleccionar la red que vamos a utilizar para comunicar el cliente con el pfSense. En mi caso voy a seleccionar la red: 10.0.0.0/24, así como las redes o IP internas a las que tendrá acceso el cliente cuando se conecte por la VPN
+- Hacemos clic en Redirect IPv4 Gateway: Force all client-generated IPv4 traffic through the tunnel. para seleccionar esta opción
+- Podemos seleccionar la opción Inter-client communication para permitir comunicación entre clientes de la VPN
+- Podemos seleccionar la opción Duplicate connection para permitir varias conexiones de un mismo cliente
+  
+- Podemos proporcionar el dominio a los clientes y los DNS a los que poder acceder
+	- DNS Server 1: 1.1.1.1
+	- DNS Server 2: 8.8.8.8
+- Seleccionamos la opción de Verbosity level: 3 (recommended)
+- Guardamos y listo!
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/OpenCertificate.png?raw=true/>
+</p>
+
+---
+
+# 6. Comprobamos el servicio
+
+1. Nos dirigimos a **Status > Service** y podemos comprobar los servicios activos y recién habilitados
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/OpenSS.png?raw=true/>
+</p>
+
+---
+
+# 7. Configurar las reglas en el firewall para permitir acceso
+
+1. Ahora nos toca crear una regla en la WAN que nos permita el acceso a través del puerto de VPN. Para ello, clicamos en **Firewall > Rules > WAN**  y vamos a crear la regla, clicando donde dice Add rule
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/OpenRules.png?raw=true/>
+</p>
+
+2. Seleccionamos las opciones siguientes, para una configuración básica:
+
+| **Opción** | **Descripción** |
+|------------|-----------------|
+| Action | Pass |
+| Interface | WAN |
+| Protocol | UDP |
+| Source | Any |
+| Destination | Any |
+| Destination port range | 5194 |
+| Logs | Seleccionamos la opción de guardar |
+| Descripción | OPENVPN:RULE |
+
+3. Una vez realizados los cambios, guardamos y se nos muestra como sigue:
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/OpenRules.png?raw=true/>
+</p>
+
+---
+
+# 8. Regla para permitir todo el tráfico VPN
+
+1. Ahora nos vamos a la pestaña de **OpenVPN** para crear otra regla que permita todo el tráfico. Seleccionamos todos los protocolos (ANY) y desde cualquier origen (ANY) a cualquier destino (ANY).
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/OpenRule.png?raw=true/>
+</p>
+
