@@ -912,3 +912,35 @@ fiabilidad, servicios, etc.
 <img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/OpenRule.png?raw=true/>
 </p>
 
+---
+
+# 9. Exportar el archivo de configuración OpenVPN para los clientes
+
+1. Primero tenemos que crear un usuario nuevo, por tanto nos vamos a **System > User Manager**
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/OpenUsu.png?raw=true/>
+</p>
+
+2. Creamos un nuevo usuario y clicamos en Click to create a user certificate para crear el certificado para ese usuario.
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/OpenUsu.png?raw=true/>
+</p>
+
+3. Una vez creado nuestro usuario de prueba (con su certificado para la VPN) ver cómo  exportar los clientes VPN. Para ello seleccionamos en el menú  a **VPN > OpenVPN > Client Export**.
+
+Y si nos vamos al final del todo, veremos a nuestro usuario DonBaguette.
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/OpenDonB.png?raw=true/>
+</p>
+
+---
+
+# 10. Comprobar estado del servicio y de los clientes conectados
+
+1. Si queremos hacer una prueba  podemos descargar el certificado para Android o el de OpenVPN Connect (IOS/Android). En el caso de utilizar un dispositivo móvil, tendríamos que instalar la OpenVPN for Android
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/OpenDonB.png?raw=true/>
+</p>
+
+2. Una vez tengamos lista la app, podemos exportar a nuestro dispositivo móvil el certificado del cliente VPN que hayamos creado. En mi caso, sería el usuario DonBaguette
+3. 
