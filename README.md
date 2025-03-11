@@ -943,4 +943,4 @@ Y si nos vamos al final del todo, veremos a nuestro usuario DonBaguette.
 </p>
 
 2. Una vez tengamos lista la app, podemos exportar a nuestro dispositivo móvil el certificado del cliente VPN que hayamos creado. En mi caso, sería el usuario DonBaguette
-3. 
+
