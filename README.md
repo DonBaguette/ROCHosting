@@ -959,29 +959,29 @@ Y si nos vamos al final del todo, veremos a nuestro usuario DonBaguette.
 
 ---
 
-## ¿Qué es TrueNAS?
+## 1. ¿Qué es TrueNAS?
 
 - TrueNAS es un sistema operativo de código abierto diseñado para gestionar almacenamiento en red. Permite crear servidores de almacenamiento seguros y accesibles desde cualquier dispositivo en la red.
 
 ---
 
-## Ventajas de TrueNAS
+## 2. Ventajas de TrueNAS
 
-✅ Gratuito y de código abierto
-✅ Alta seguridad y estabilidad
-✅ Escalabilidad (se adapta a pequeñas y grandes empresas)
-✅ Compatibilidad con múltiples protocolos (SMB, NFS, iSCSI, etc.)
-✅ Protección de datos con ZFS (evita corrupción de archivos)
+- ✅ Gratuito y de código abierto
+- ✅ Alta seguridad y estabilidad
+- ✅ Escalabilidad (se adapta a pequeñas y grandes empresas)
+- ✅ Compatibilidad con múltiples protocolos (SMB, NFS, iSCSI, etc.)
+- ✅ Protección de datos con ZFS (evita corrupción de archivos)
 
 ---
 
-## Principales características
+## 3. Principales características
 
-🔹 Basado en FreeBSD 
-🔹 Gestión web intuitiva
-🔹 Soporte para virtualización y contenedores
-🔹 Snapshots y backup automatizados
-🔹 Integración con servicios en la nube
+- 🔹 Basado en FreeBSD 
+- 🔹 Gestión web intuitiva
+- 🔹 Soporte para virtualización y contenedores
+- 🔹 Snapshots y backup automatizados
+- 🔹 Integración con servicios en la nube
 
 ---
 
