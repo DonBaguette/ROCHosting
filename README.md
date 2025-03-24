@@ -944,3 +944,51 @@ Y si nos vamos al final del todo, veremos a nuestro usuario DonBaguette.
 
 2. Una vez tengamos lista la app, podemos exportar a nuestro dispositivo móvil el certificado del cliente VPN que hayamos creado. En mi caso, sería el usuario DonBaguette
 
+---
+
+</details>
+</details>	
+
+<details>
+  <summary>📂TRUENAS </summary>
+    <em>
+
+</p>
+
+# OPENVPN
+
+---
+
+## ¿Qué es TrueNAS?
+
+- TrueNAS es un sistema operativo de código abierto diseñado para gestionar almacenamiento en red. Permite crear servidores de almacenamiento seguros y accesibles desde cualquier dispositivo en la red.
+
+---
+
+## Ventajas de TrueNAS
+
+✅ Gratuito y de código abierto
+✅ Alta seguridad y estabilidad
+✅ Escalabilidad (se adapta a pequeñas y grandes empresas)
+✅ Compatibilidad con múltiples protocolos (SMB, NFS, iSCSI, etc.)
+✅ Protección de datos con ZFS (evita corrupción de archivos)
+
+---
+
+## Principales características
+
+🔹 Basado en FreeBSD 
+🔹 Gestión web intuitiva
+🔹 Soporte para virtualización y contenedores
+🔹 Snapshots y backup automatizados
+🔹 Integración con servicios en la nube
+
+---
+
+<details> 
+<summary>⚙️ Pasos para configurar TRUENAS</summary>
+        <em>
+        
+</p>
+
+
