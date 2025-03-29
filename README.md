@@ -1,4 +1,4 @@
-<h1 align="center">
+![image](https://github.com/user-attachments/assets/667c3533-22d9-4b11-b9fb-4235df26bec0)<h1 align="center">
 	<align: left;">
     <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Logo.png?raw=true
   <p align="center">
@@ -955,7 +955,7 @@ Y si nos vamos al final del todo, veremos a nuestro usuario DonBaguette.
 
 </p>
 
-# OPENVPN
+# TRUENAS
 
 ---
 
@@ -991,4 +991,74 @@ Y si nos vamos al final del todo, veremos a nuestro usuario DonBaguette.
         
 </p>
 
+# Configuración TrueNAS
+
+---
+
+## 1. Requisitos
+
+✅ Tener TrueNAS instalado
+
+✅ Tener acceso a la Interfaz Web 
+
+✅ Tener otra máquina en la misma red
+
+---
+
+## 2. Creación de Raid 5
+
+- Para crear un Raid 5 en nuestro TrueNAS tenemos que ir primero de todo al interfaz de web con otra maquina que este en la red
+- Ahora dentro del TrueNAS nos vamos a **Storage** > **Create Pool**, vamos a añadir en "name" un nombre y luego en "data" seleccionamos el tipo de raid que queremos y los discos que vamos a utilizar, en mi caso va a ser un RaidZ1. Luego le damos a siguiente a todo y ya tendríamos el raid creado.
+- Por ultimo vamos a añadir carpetas dentro del Raid, para ello nos vamos al apartado **Datasets** y hacemos clic en "Add Dataset", nos va a pedir un nombre y guardar. Ahora ya tenemos carpetas creadas dentro del raid.
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/TrueNAS.png?raw=true/>
+</p>
+
+---
+
+## 3. Configuración Backups
+
+- Ahora vamos a empezar con la configuración para hacer backups, en mi caso va a ser a una maquina Ubuntu Desktop
+- Primero de todo vamos a ir al interfaz web de Truenas y nos vamos a ir al apartado **System** > **Services**, Aqui nos van a aparecer diferentes servicios disponibles, nosotros tenemos que activar el servicio "SSH"
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Servicios.png?raw=true/>
+</p>
+
+- Ahora nos vamos a ir a nuestra maquina ubuntu y vamos a comprobar la conexión con el servidor, para ello vamos a ir a la consola de comandos y vamos a instalar el servicio SSH si no lo tenemos, para ello vamos a utilizar el siguiente comando `sudo apt install ssh`
+- Ahora que lo tenemos instalado, si en la consola escribimos ssh `nombretruenas@iptruenas` nos va a dejar entrar.
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/ssh.png?raw=true/>
+</p>
+
+- Ahora vamos a crear un archivo en el ubuntu desktop para que podamos hacer las copias de seguridad y decirle desde donde y a donde hay que hacer las copias, para ello, nos vamos a ir a /usr/local/bin/ y aqui vamos a crear un archivo llamado **backup.sh**
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/localizacion.png?raw=true/>
+</p>
+
+- Dentro el archivo **backup.sh** vamos a añadir el siguiente texto, hay que tener en cuenta que no vamos a tener las mismas localizaciones de archivos todos, entonces que cada uno ponga donde estan sus archivos en vez de utilizar los mios, ya que no funcionara. 
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Truenascopias.png?raw=true/>
+</p>
+
+- Ahora guardamos el archivo y por ultimo vamos a poner un comando para que no pida permisos de ejecucion del archivo, el comando es el siguiente `chmod +x /usr/local/bin/backup.sh`
+
+---
+
+## 4. Configuración CronTab
+
+- Ahora vamos a configurar el CronTab, el cual nos va a permitir establecer cada cuanto queremos hacer copias de seguridad
+- Para ello vamos a ir a la consola del ubuntu desktop y vamos a añadir el siguiente comando `crontab -e`, nos llevara a un nuevo archivo que tenemos que editar y añadir lo siguiente `0 3 * * * /usr/local/bin/backup_docker.sh >> /var/log/backup.log 2>&1`. Cada uno tiene que añadir su localización el archivo, no utilizar el mio porque no va a funcionar. En este caso mi crontab lo que dice es lo siguiente, que haga copias de seguridad todos los dias a las 3AM.
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/crontab.png?raw=true/>
+</p>
+
+- Por ultimo guardamos el archivo y para configurar que funciona todo vamos a utilizar el siguiente comando `backup.sh` hay que poner solamente el nombre del archivo del backup y el .sh, ahora se nos va a incializar la copia de seguridad y deberia aparecer algo como en la imagen
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/prueba.png?raw=true/>
+</p>
+
+- Ahora por ultimo, si nos conectamos con el ssh al truenas y nos vamos a la carpeta donde esta configurado que se guarde las copias, deberian aparecernos los archivos copiados
+<p align="left">
+<img width="52%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/truenasc.png?raw=true/>
+</p>
 
