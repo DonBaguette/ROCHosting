@@ -107,7 +107,12 @@
 
 <h1 align="center">
 	<align: left;">
-    <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/text%20(1).png?raw=true
+    <img width="50%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Mockup.png?raw=true
+  <p align="center">
+
+<h1 align="center">
+	<align: left;">
+    <img width="50%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Mockup2.png?raw=true
   <p align="center">
 
 ## 📁Guías de uso 
