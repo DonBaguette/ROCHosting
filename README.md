@@ -111,7 +111,9 @@ Aquí encontrarás los **mockups y diseños actuales** de la plataforma, los cua
 ### Estos diseños incluyen:
 - La estructura de la web y su apariencia visual.
 - La disposición de los elementos y la navegación.
-- La estética general y la experiencia de usuario que buscamos ofrecer.
+- La estética general
+- El mapa Web
+- La guía de estilo
 
 ### Importante:
 Estos diseños **no son definitivos** y pueden tener cambios durante el desarrollo. El objetivo es mejorar continuamente la plataforma, por lo que es posible que algunos elementos visuales y de funcionalidad sean ajustados antes del lanzamiento final.
@@ -121,11 +123,13 @@ Estos diseños **no son definitivos** y pueden tener cambios durante el desarrol
     <em>
 
 <p float="left">
-  <img src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Mockup.png?raw=true width="500" />
-  <img src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Mockup2.png?raw=true width="500" />
-  <img src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Mockup2.png?raw=true width="500" />
-  <img src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Mockup2.png?raw=true width="500" />
-  <img src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Mockup2.png?raw=true width="500" />
+  <img src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/1.png?raw=true width="500" />
+  <img src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/2.png?raw=true width="500" />
+  <img src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/3.png?raw=true width="500" />
+  <img src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/4.png?raw=true width="500" />
+  <img src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/5.png?raw=true width="500" />
+  <img src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/6.png?raw=true width="500" />
+  <img src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/7.png?raw=true width="500" />
 </p>
  
 </details>
