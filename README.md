@@ -1,7 +1,7 @@
-![image](https://github.com/user-attachments/assets/667c3533-22d9-4b11-b9fb-4235df26bec0)<h1 align="center">
-	<align: left;">
-    <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Logo.png?raw=true
-  <p align="center">
+<h1 align="center">
+<align: left;">
+<img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Logo.png?raw=true
+<p align="center">
             ROCHosting<br>
             <br><br>
         </em>
