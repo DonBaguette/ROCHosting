@@ -101,14 +101,34 @@
     <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Networks.png?raw=true
   <p align="center">
 
-## Mockup & Mapa Web
+## 📰 Mockup & Mapa Web
+<div>
+    <p align="center">
+    <em>
 
-</p>
+Aquí encontrarás los **mockups y diseños actuales** de la plataforma, los cuales representan nuestra visión del sitio web en su estado actual.
+
+### Estos diseños incluyen:
+- La estructura de la web y su apariencia visual.
+- La disposición de los elementos y la navegación.
+- La estética general y la experiencia de usuario que buscamos ofrecer.
+
+### Importante:
+Estos diseños **no son definitivos** y pueden tener cambios durante el desarrollo. El objetivo es mejorar continuamente la plataforma, por lo que es posible que algunos elementos visuales y de funcionalidad sean ajustados antes del lanzamiento final.
+
+<details>
+  <summary>📂DISEÑOS</summary>
+    <em>
 
 <p float="left">
   <img src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Mockup.png?raw=true width="500" />
   <img src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Mockup2.png?raw=true width="500" />
+  <img src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Mockup2.png?raw=true width="500" />
+  <img src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Mockup2.png?raw=true width="500" />
+  <img src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Mockup2.png?raw=true width="500" />
 </p>
+ 
+</details>
 
 ## 📁Guías de uso 
 
