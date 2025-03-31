@@ -101,6 +101,15 @@
     <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Networks.png?raw=true
   <p align="center">
 
+## Mockup
+
+</p>
+
+<h1 align="center">
+	<align: left;">
+    <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/text%20(1).png?raw=true
+  <p align="center">
+
 ## 📁Guías de uso 
 
 <p align="center">
