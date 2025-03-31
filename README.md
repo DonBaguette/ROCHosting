@@ -70,8 +70,6 @@
     <em>
  </p>
 
-> [!NOTE] Text for Note
-
 | MÁQUINA | SO | ALMACENAMIENTO | CPU | RAM | IP |
 | --- | --- | --- | --- | --- | --- |
 | Host | Windows 11 | 3TB SSD | 16 Núcleos | 32GB | **DHCP** 192.168.1.10 |
@@ -102,18 +100,6 @@
 	<align: left;">
     <img width="82%" src=https://github.com/DonBaguette/ROCHosting/blob/main/Images/Networks.png?raw=true
   <p align="center">
-
-  ## 📈Diagrama de Gantt (En proceso)
-
-<p align="center">
-    <em>
-        
-</p>
-
-- **Semana** **: Configuración de máquinas virtuales y pfSense.
-- **Semana** **: Instalación de Docker y desarrollo de la interfaz web.
-- **Semana** **: Implementación de copias de seguridad y monitoreo.
-- **Semana** **: Pruebas y ajustes finales.
 
 ## 📁Guías de uso 
 
