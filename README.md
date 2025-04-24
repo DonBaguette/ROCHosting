@@ -134,6 +134,20 @@ Estos diseños **no son definitivos** y pueden tener cambios durante el desarrol
  
 </details>
 
+  ## 🔒Plan de contingencia
+
+<p align="center">
+    <em>
+        
+</p>
+
+Para asegurarme de no perder mi proyecto ni todo el trabajo que llevo hecho, tengo varias copias de seguridad repartidas en diferentes dispositivos. La principal está en una máquina virtual con TrueNAS, que realiza backups periódicamente. Además, tengo una copia en un SSD externo por precaución, y otra más en un mini servidor en rack que monté en casa, corriendo Proxmox y también con TrueNAS.
+
+<p align="center">
+    <em>
+        
+</p>
+
 ## 📁Guías de uso 
 
 <p align="center">
